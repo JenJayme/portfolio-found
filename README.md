@@ -1,6 +1,8 @@
 # Jen Jayme Portfolio - Version 4 (October 2020)
 
-![Travis Status](https://img.shields.io/travis/:jenjayme/:portfolio-found)
+![Top Language](https://img.shields.io/github/languages/top/jenjayme/portfolio-found)
+![Commit Activity](https://img.shields.io/github/commit-activity/m/jenjayme/portfolio-found)
+![Last Commit](https://img.shields.io/github/last-commit/jenjayme/portfolio-found)
 ![License](https://img.shields.io/github/license/jenjayme/portfolio-found)
 <hr>
 
@@ -18,10 +20,10 @@ You can see the evolution of my portfolio by glimpsing [earlier versions](#earli
 ## [Getting Started](#start)
 
 ### Download the app from the Git Hub repo here:
-* [github.com/jenjayme/new-GOT-quiz](https://github.com/jenjayme/portfolio-found)
+* [github.com/jenjayme/portfolio-found](https://github.com/jenjayme/portfolio-found)
 
 ### <a id="demo">View a demo here:</a> 
-* [jenjayme.github.io/new-GOT-quiz](https://jenjayme.github.io/portfolio-found/#demo)
+* [jenjayme.github.io/portfolio-found](https://jenjayme.github.io/portfolio-found/#demo)
 <hr>
 
 ## [Visuals](#visuals)
@@ -55,7 +57,7 @@ This version was a big upgrade over the first version, and I continued to use an
 ### Version 3
 This version was my favorite stylistically... until all of the image links broke irreparably upon deployment.  I had saved all images in the public folder, and learned it was better practice to keep images with their respective components when building a React app.
 * [Version 3 Repo](https://github.com/JenJayme/react-portfolio/)
-* [Version 3 Deployed](https://jenjayme.github.io/reat-portfolio/)
+* [Version 3 Deployed](https://jenjayme.github.io/react-portfolio/)
 
 <hr>
 
