@@ -1,3 +1,20 @@
+/* ABOUT ME BAR */
+#aboutMeBar {
+  background-color: #994794;
+}
+
+body {
+  background-color: black;
+}
+
+#codeProjectsBar {
+  background-color: rgb(233, 75, 17)
+}
+
+#contactMeBar {
+  background-color: black;
+}
+
 /* FLIP CARD */
 
 .flip-card {

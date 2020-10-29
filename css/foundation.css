@@ -14,10 +14,12 @@
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
   line-height: 1.15;
-  -webkit-text-size-adjust: 100%; }
+  -webkit-text-size-adjust: 100%; 
+}
 
 body {
-  margin: 0; }
+  margin: 0; 
+}
 
 h1 {
   font-size: 2em;
@@ -2932,6 +2934,7 @@ select {
   margin-left: 0;
   background: #fefefe;
   list-style-type: none; }
+
   .accordion[disabled] .accordion-title {
     cursor: not-allowed; }
 
@@ -2949,12 +2952,18 @@ select {
   border-bottom: 0;
   font-size: 0.75rem;
   line-height: 1;
-  color: #1779ba; }
+  /* color: #1779ba;  */
+  color: rgba(255, 255, 255, .9); 
+}
+
   :last-child:not(.is-active) > .accordion-title {
     border-bottom: 1px solid #e6e6e6;
     border-radius: 0 0 0 0; }
   .accordion-title:hover, .accordion-title:focus {
-    background-color: #e6e6e6; }
+    background-color: rgba(255, 255, 255, .2); 
+    color: rgba(255, 255, 255, .8);
+  }
+  
   .accordion-title::before {
     position: absolute;
     top: 50%;
@@ -2969,8 +2978,11 @@ select {
   padding: 1rem;
   border: 1px solid #e6e6e6;
   border-bottom: 0;
-  background-color: #fefefe;
-  color: #0a0a0a; }
+  /* background-color: #fefefe; */
+  background-color: black;
+  color: white; 
+}
+
   :last-child > .accordion-content:last-child {
     border-bottom: 1px solid #e6e6e6; }
 
@@ -4250,7 +4262,14 @@ select {
   transition: transform 0.5s ease, -webkit-transform 0.5s ease;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  background: #e6e6e6; }
+  /* background: #e6e6e6; } */
+  background-image: url("../images/lights-multicolor-static-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgba(255, 255, 255, .8);
+  }
+
   [data-whatinput='mouse'] .off-canvas {
     outline: 0; }
   .off-canvas.is-transition-push {
