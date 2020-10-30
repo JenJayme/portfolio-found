@@ -2222,6 +2222,7 @@ h2, .h2 {
   margin-bottom: 0.5rem; }
 
 h3, .h3 {
+  font-family: Lobster, cursive;
   font-size: 1.1875rem;
   line-height: 1.4;
   margin-top: 0;
@@ -2980,6 +2981,7 @@ select {
   border-bottom: 0;
   /* background-color: #fefefe; */
   background-color: black;
+  background-image: radial-gradient(rgb(7, 7, 173), 20%, black);
   color: white; 
 }
 
@@ -5176,7 +5178,8 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
 .tabs {
   margin: 0;
   border: 1px solid #e6e6e6;
-  background: #fefefe;
+  /* background: rgb(254, 254, 254, .8); */
+  background: rgb(4, 4, 87);
   list-style-type: none; }
   .tabs::before, .tabs::after {
     display: table;
@@ -5215,21 +5218,32 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
     padding: 1.25rem 1.5rem;
     font-size: 0.75rem;
     line-height: 1;
-    color: #1779ba; }
+    color: #1779ba; 
+  }
+
     [data-whatinput='mouse'] .tabs-title > a {
       outline: 0; }
     .tabs-title > a:hover {
-      background: #fefefe;
-      color: #1468a0; }
+      background: rgba(254, 254, 254, .4);
+      /* color: #1468a0;  */
+      color: rgb(7, 7, 173)
+    }
+    
     .tabs-title > a:focus, .tabs-title > a[aria-selected='true'] {
-      background: #e6e6e6;
-      color: #1779ba; }
+      /* background: #e6e6e6; */
+      background: rgb(7, 7, 173);
+      /* color: #1779ba;  */
+      color: rgba(254, 254, 254, .4); 
+    }
 
 .tabs-content {
   border: 1px solid #e6e6e6;
   border-top: 0;
-  background: #fefefe;
-  color: #0a0a0a;
+  /* background: #fefefe; */
+  background-image: radial-gradient(ellipse farthest-corner at center, rgba(240, 234, 214, 1) 25%, rgba(255, 255, 242, 1) 75%, rgba(255, 255, 255, 1) 100%);
+  padding: 1rem;
+  color: rgb(58, 22, 56);
+  /* color: #0a0a0a; */
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease; }
 

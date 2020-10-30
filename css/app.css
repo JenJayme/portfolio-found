@@ -1,6 +1,26 @@
+/* COLOR PALETTE */
+
+/* Primary - Plum */
+/* rgb(102, 26, 86); */
+
+/* Secondary - Orange */
+/* rgb(210, 82, 15) */
+
+/* Accent - Maroon */
+/* rgb(124, 23, 28) */
+
+/* Background - Eggshell */
+/* radial-gradient(ellipse farthest-corner at center, rgba(240, 234, 214, 1) 35%, rgba(255, 255, 242, 1) 65%, rgba(255, 255, 255, 1) 100%); */
+
+/* Background - Blue to Black */
+/* radial-gradient(rgb(7, 7, 173), 20%, black); */
+
+/* ========================================================= */
+
+
 /* ABOUT ME BAR */
 #aboutMeBar {
-  background-color: #863481;
+  background-color: rgb(102, 26, 86);
 }
 
 .avatar {
@@ -18,7 +38,7 @@ body {
 }
 
 #codeProjectsBar {
-  background-color: rgb(206, 91, 16)
+  background-color: rgb(210, 82, 15)
 }
 
 #contactMeBar {
@@ -176,7 +196,7 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
-    background-image: radial-gradient(ellipse closest-corner at center, rgba(240, 234, 214, 1) 35%, rgba(255, 255, 242, 1) 65%, rgba(255, 255, 255, 1) 100%);
+    background-image: radial-gradient(ellipse farthest-corner at center, rgba(240, 234, 214, 1) 35%, rgba(255, 255, 242, 1) 65%, rgba(255, 255, 255, 1) 100%);
     padding: 1rem;
     color: rgb(58, 22, 56);
   }
