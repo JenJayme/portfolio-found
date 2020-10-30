@@ -20,7 +20,8 @@
 
 /* ABOUT ME BAR */
 #aboutMeBar {
-  background-color: rgb(102, 26, 86);
+  background-color: rgb(126, 13, 101);
+  /* border-style: solid; */
 }
 
 .avatar {
@@ -38,11 +39,11 @@ body {
 }
 
 #codeProjectsBar {
-  background-color: rgb(210, 82, 15)
+  background-color: rgb(97, 23, 81);
 }
 
 #contactMeBar {
-  background-color: rgb(124, 23, 28)
+  background-color: rgb(70, 18, 59);
 }
 
 .button-secondary {
@@ -51,6 +52,29 @@ body {
   margin-right: 10px;
 }
 
+#myVideo {
+  display: block;
+  height: 100%;
+}
+
+.content {
+  margin: auto;
+  left: 0%;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  background: rgba(0, 0, 0, 0.35);
+  /* opacity: 50%; */
+  color: #f1f1f1;
+  width: inherit;
+  height: 100%;
+  padding: 20px;
+  display: inline-block;
+}
+
+.rounded {
+  border-radius: 50%;
+}
 
 
 /* FLIP CARD */
@@ -108,65 +132,65 @@ body {
   }
   
   .img-paws {
-    background: url(../images/paws.png) 0 0 no-repeat;
+    background: url('../images/paws.png') 0 0 no-repeat;
     background-size: cover;
   }
   
   .img-bragging {
-    background: url(../images/braggingrights.png) 0 0 no-repeat;
+    background: url('../images/braggingrights.png') 0 0 no-repeat;
     background-size: cover;
     background-position: -120px;
   }
   
   .img-tricking {
-    background: url(../images/tricking.png) 0 0 no-repeat;
+    background: url('../images/tricking.png') 0 0 no-repeat;
     background-size: cover;
     background-position: -150px;
   }
   
   .img-clickamajiggy {
-    background: url(../images/clickamajiggy.png) 0 0 no-repeat;
+    background: url('../images/clickamajiggy.png') 0 0 no-repeat;
     background-size: cover;
     background-position: -90px;
   }
   
   .img-employees {
-    background: url(../images/employeedir.gif) 0 0 no-repeat;
+    background: url('../images/employeedir.gif') 0 0 no-repeat;
     background-size: cover;
     background-position: -110px;
   }
   
   .img-spartan {
-    background: url(../images/spartan.png) 0 0 no-repeat;
+    background: url('../images/spartan.png') 0 0 no-repeat;
     background-size: cover;
     background-position: -150px;
   }
   
   .img-virtuous {
-    background: url(../images/virtuous-circle.png) 0 0 no-repeat;
+    background: url('../images/virtuous-circle.png') 0 0 no-repeat;
     background-size: cover;
     background-position: -135px;
   }
   
   .img-got {
-    background: url(../images/got-min.jpg) 0 0 no-repeat;
+    background: url('../images/got-min.jpg') 0 0 no-repeat;
     background-size: cover;
     background-position: -70px;
   }
   
   .img-middle {
-    background: url(../images/middle-ground.png) 0 0 no-repeat;
+    background: url('../images/middle-ground.png') 0 0 no-repeat;
     background-size: cover;
     background-position: -120px;
   }
   
   .img-weather {
-    background: url(../images/weather-dash-img.png) 0 0 no-repeat;
+    background: url('../images/weather-dash-img.png') 0 0 no-repeat;
     background-size: cover;
   }
 
   .img-booksearch {
-    background: url(../images/booksearch.png) 0 0 no-repeat;
+    background: url('../images/booksearch.png') 0 0 no-repeat;
     background-size: cover;
   }
   
