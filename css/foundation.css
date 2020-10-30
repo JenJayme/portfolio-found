@@ -2948,16 +2948,16 @@ select {
   position: relative;
   display: block;
   padding: 1.25rem 1rem;
-  border: 1px solid #e6e6e6;
+  /* border: 1px solid #e6e6e6; */
   border-bottom: 0;
-  font-size: 0.75rem;
+  font-size: 1.25rem;
   line-height: 1;
   /* color: #1779ba;  */
   color: rgba(255, 255, 255, .9); 
 }
 
   :last-child:not(.is-active) > .accordion-title {
-    border-bottom: 1px solid #e6e6e6;
+    /* border-bottom: 1px solid #e6e6e6; */
     border-radius: 0 0 0 0; }
   .accordion-title:hover, .accordion-title:focus {
     background-color: rgba(255, 255, 255, .2); 
@@ -2976,7 +2976,7 @@ select {
 .accordion-content {
   display: none;
   padding: 1rem;
-  border: 1px solid #e6e6e6;
+  /* border: 1px solid #e6e6e6; */
   border-bottom: 0;
   /* background-color: #fefefe; */
   background-color: black;
@@ -3186,7 +3186,7 @@ select {
   .button-group.small .button {
     font-size: 0.75rem; }
   .button-group.large .button {
-    font-size: 1.25rem; }
+    font-size: 1rem; }
   .button-group.expanded .button {
     -webkit-box-flex: 1;
     -webkit-flex: 1 1 0px;

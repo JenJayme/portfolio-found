@@ -12,7 +12,9 @@ body {
 }
 
 .button {
-  background-color: #863481;
+  background-color: rgb(134, 52, 129);
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 #codeProjectsBar {
@@ -22,6 +24,14 @@ body {
 #contactMeBar {
   background-color: rgb(124, 23, 28)
 }
+
+.button-secondary {
+  background-color: rgb(124, 23, 28);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
 
 /* FLIP CARD */
 
@@ -134,6 +144,11 @@ body {
     background: url(../images/weather-dash-img.png) 0 0 no-repeat;
     background-size: cover;
   }
+
+  .img-booksearch {
+    background: url(../images/booksearch.png) 0 0 no-repeat;
+    background-size: cover;
+  }
   
   .flip-card-inner-front span {
     width: 100%;
@@ -161,9 +176,12 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
-    background: #cacaca;
+    background-image: radial-gradient(ellipse closest-corner at center, rgba(240, 234, 214, 1) 35%, rgba(255, 255, 242, 1) 65%, rgba(255, 255, 255, 1) 100%);
     padding: 1rem;
+    color: rgb(58, 22, 56);
   }
+
+  /* rgb(124, 23, 28) */
   
   .flip-card-inner-back-title {
     font-weight: bold;
