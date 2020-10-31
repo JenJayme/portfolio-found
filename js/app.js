@@ -9,9 +9,21 @@ button.on('click', function (event) {
     console.log("Button click registered!")
 })
 
+
+$('.flip-card').on('mouseover', function (event) {
+    event.preventDefault();
+    // var thisLink = $('.flip-card-inner a');
+    var thisLink = $("<a>");
+    thisLink.removeClass('hidden');
+    console.log("Hovering on", thisLink)
+})
+
 $(document).ready(function () {
-    button.on('click', function (event) {
-        console.log("Button click registered!")
+
+
+
+      $(document).on('click', function (event) {
+        console.log("Clicked", $(this))
     })
 })
 

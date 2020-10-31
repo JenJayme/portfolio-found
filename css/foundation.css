@@ -2950,7 +2950,7 @@ select {
   padding: 1.25rem 1rem;
   /* border: 1px solid #e6e6e6; */
   border-bottom: 0;
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 1;
   /* color: #1779ba;  */
   color: rgba(255, 255, 255, .9); 
@@ -2979,9 +2979,6 @@ select {
   /* border: 1px solid #e6e6e6; */
   border-bottom: 0;
   /* background-color: #fefefe; */
-  background-color: black;
-  background-image: radial-gradient(rgb(7, 7, 173), 20%, black);
-  color: white; 
 }
 
   :last-child > .accordion-content:last-child {

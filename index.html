@@ -26,7 +26,7 @@
 
         <div class="row column content">
           <br>
-          <img class="thumbnail" src="images/jen-head-shot.png" class="rounded">
+          <img class="thumbnail rounded" src="images/jen-head-shot.png">
           <h2>Jen Jayme</h2>
           <p>Principal Consultant<br>
           Jayme Development Services</p>
@@ -45,12 +45,13 @@
             <span class="title-bar-title">Jen Jayme</span>
           </div>
         </div>
-        <div class="callout primary hide-for-medium">
+        <div class="hide-for-medium backgroundDark">
           <div class="row column">
-            <h1>Hi! I'm Jen Jayme.</h1>
-            <p class="lead">I’m a full stack web developer with front-end design talents, and a background in cause-based fundraising, marketing and
-              communications.  I’m looking for opportunities to exercise and deepen my coding skills.</p>
-            <p><small>Click headings to expand and collapse the <strong>About Me</strong>, <strong>Code Projects</strong> and <strong>Contact Details</strong> sections below.</small></p>
+            <img class="thumbnail rounded" src="images/jen-head-shot.png">
+            <h1>Jen Jayme</h1>
+            <p class="lead">Full stack web developer with front-end design talents, and a background in cause-based fundraising, marketing and
+              communications.  Looking for opportunities to exercise and deepen my coding skills.</p>
+            <p><small>Click headings below to expand and collapse the <strong>About Me</strong>, <strong>Code Projects</strong> and <strong>Contact Details</strong> sections below.</small></p>
           </div>
         </div>
 
@@ -63,7 +64,7 @@
             <a href="#" class="accordion-title">About Me  <small>(bio | tech skills | education | community service | resume)</small></a>
 
             <!-- Accordion tab content. -->
-            <div class="accordion-content" data-tab-content>
+            <div class="accordion-content backgroundDark" data-tab-content>
 
               <!-- Responsive Tabs: Bio Skills Resume -->
               <ul class="tabs" data-responsive-accordion-tabs="tabs medium-accordion large-tabs" id="about-tabs">
@@ -268,7 +269,7 @@
             <a href="#" class="accordion-title">Code Projects</a>
 
             <!-- Accordion tab content. -->
-            <div class="accordion-content" data-tab-content>
+            <div class="accordion-content backgroundDark" data-tab-content>
               <div class="row"></div>
 
               <!-- MAIN PAGE PROJECT GRID -->
@@ -276,20 +277,24 @@
 
                 <!-- FLIP CARDS -->
                 <div class="column">
+
                   <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
+
                     <div class="flip-card-inner">
                       <div class="flip-card-inner-front img-paws">
                         <span>Lisa's Pampered Paws</span>
                       </div>
+
                       <div class="flip-card-inner-back">
                         <h3 class="flip-card-inner-back-title">Lisa's Pampered Paws</h3>
                         <p class="flip-card-inner-back-text">This website was built for an active pet grooming business in Reno, Nevada.  It was one of the first projects I coded from scratch professionally for a living business (not just for a Boot Camp project).</p>
                           <div class="row">
-                            <a href="https://github.com/JenJayme/lisas-pampered-paws" class="button float-left" target="_blank">Repo</a>
-                            <a href="https://lisaspamperedpaws.com/" class="button button-secondary float-right" target="_blank">Deployed</a>
+                            <a href="https://github.com/JenJayme/lisas-pampered-paws" class="button float-left hidden" target="_blank">Repo</a>
+                            <a href="https://lisaspamperedpaws.com/" class="button button-secondary float-right innerCardBtn hidden" target="_blank">Deployed</a>
                           </div>                      
                         </div>
                     </div>
+                    <a href="https://lisaspamperedpaws.com/" class="button button-secondary float-right hidden" target="_blank" id="testButton">Test Button</a>
                   </div>
                 </div>
 
@@ -528,7 +533,7 @@
             <a href="#" class="accordion-title">Contact Details</a>
 
             <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
-            <div class="accordion-content" data-tab-content>
+            <div class="accordion-content backgroundDark" data-tab-content>
 
               <!-- CONTACT ME FOOTER -->
               <div class="row">
