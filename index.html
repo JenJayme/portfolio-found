@@ -6,6 +6,15 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jen Jayme Portfolio | Welcome</title>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      // https://dashboard.emailjs.com/admin/integration
+      emailjs.init('user_HwMXwEHp0KORxnvgNKatv');
+    })();
+  </script>
+
+  <!-- CSS  -->
   <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
   <link rel="stylesheet" href="css/foundation.css">
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
@@ -29,8 +38,9 @@
           <img class="thumbnail rounded" src="images/jen-head-shot.png">
           <h2>Jen Jayme</h2>
           <p>Principal Consultant<br>
-          Jayme Development Services</p>
-          <p>Full stack web developer with front-end design talents and a background in cause-based fundraising, marketing
+            Jayme Development Services</p>
+          <p>Full stack web developer with front-end design talents and a background in cause-based fundraising,
+            marketing
             and communications. </p>
           <!-- <p>I’m looking for opportunities to exercise and deepen my coding skills.</p> -->
         </div>
@@ -45,13 +55,14 @@
             <span class="title-bar-title">Jen Jayme</span>
           </div>
         </div>
-        
+
         <div class="hide-for-medium smallscreenHeader">
           <div class="darkScreen">
             <div class="row column">
               <img class="thumbnail rounded" src="images/jen-head-shot.png">
               <h1>Jen Jayme</h1>
-              <p>Full stack web developer with front-end design talents, and a background in cause-based fundraising, marketing and
+              <p>Full stack web developer with front-end design talents, and a background in cause-based fundraising,
+                marketing and
                 communications.</p>
               <p><small>Click headings below to expand and collapse sections.</small></p>
             </div>
@@ -64,7 +75,8 @@
           <!-- ACCORDION SECTION 1: ABOUT ME -->
           <li class="accordion-item" data-accordion-item id="aboutMeBar">
             <!-- Accordion tab title -->
-            <a href="#" class="accordion-title">About Me  <small>(bio | tech skills | education | community service | resume)</small></a>
+            <a href="#" class="accordion-title">About Me <small>(bio | tech skills | education | community service |
+                resume)</small></a>
 
             <!-- Accordion tab content. -->
             <div class="accordion-content backgroundDark" data-tab-content>
@@ -84,22 +96,32 @@
                 <div class="tabs-panel is-active" id="bio">
                   <h3>Bio</h3>
 
-                  <p class="lead">I'm enjoying a second career in full-stack web development after some years in fundraising, marketing and communications for great causes.</p>
-                  <p> I've served in leadership roles at several prominent organizations including Big Brothers Big Sisters, 
-                      Community Action Marin, Hispanic Scholarship Fund, St. Vincent de Paul Society, and Santa Clara University, 
-                      and consulted with many others. I've managed numerous major projects from start to finish, 
-                      launched new websites and brand strategies, implemented various new technologies, started new programs, led 
-                      teams to meet ambitious fundraising goals, and inspired millions of dollars in donations.</p>
-                  <p> Along the way, I got to learn from some amazing people who practiced transformative methods including Growth Mindset, 
-                      Lean Management, Kaizen, User-Centered Design and Agile Development.  These principles have cultivated my exceptional leadership, 
-                      project management, communication and interpersonal skills.</p>
-                  <p> I've frequently served as the resident website administrator, database builder, early adopter of new technologies 
-                      and all-around tech whiz in thinly staffed nonprofits. In 2020, when the pandemic shook up life as we know it, I 
-                      embraced the moment to deepen my technical skills at UC Berkeley’s Coding Boot Camp.               
-                  <p> I’m most proficient in HTML, CSS, Javascript and React, but continuously learning and comfortable 
-                      with many technologies including server-side and database architectures such as MySql, MongoDB and Node/Express servers.
+                  <p class="lead">I'm enjoying a second career in full-stack web development after some years in
+                    fundraising, marketing and communications for great causes.</p>
+                  <p> I’m most proficient in HTML, CSS, Javascript and React, but continuously learning and comfortable
+                    with many technologies including server-side and database architectures such as MySql, MongoDB and
+                    Node/Express servers.
                   </p>
-                  <p><strong>I’m actively exploring chances to exercise and deepen my coding skills, whether in consulting gigs, pro bono work, or employment opportunities.</strong></p>
+                  <p> I've served in leadership roles at several prominent organizations including Big Brothers Big
+                    Sisters,
+                    Community Action Marin, Hispanic Scholarship Fund, St. Vincent de Paul Society, and Santa Clara
+                    University,
+                    and consulted with many others. I've managed numerous major projects from start to finish,
+                    launched new websites and brand strategies, implemented various new technologies, started new
+                    programs, led
+                    teams to meet ambitious fundraising goals, and inspired millions of dollars in donations.</p>
+                  <p> Along the way, I got to learn from some amazing people who practiced transformative methods
+                    including Growth Mindset,
+                    Lean Management, Kaizen, User-Centered Design and Agile Development. These principles have
+                    cultivated my exceptional leadership,
+                    project management, communication and interpersonal skills.</p>
+                  <p> I've frequently served as the resident website administrator, database builder, early adopter of
+                    new technologies
+                    and all-around tech whiz in thinly staffed nonprofits. In 2020, when the pandemic shook up life as
+                    we know it, I
+                    embraced the moment to deepen my technical skills at UC Berkeley’s Coding Boot Camp.
+                  <p><strong>I’m actively exploring chances to exercise and deepen my coding skills, whether in
+                      consulting gigs, pro bono work, or employment opportunities.</strong></p>
                 </div>
 
                 <div class="tabs-panel" id="skills">
@@ -167,10 +189,20 @@
 
                 <div class="tabs-panel" id="education">
                   <h3>Education</h3>
-                  <ul>
-                    <li>Certificate in Full Stack Web Development: Berkeley Coding Boot Camp, U.C. Berkeley</li>
-                    <li>Bachelor of Arts, English, with Honors: University of California, Berkeley</li>
-                  </ul>
+                  <div class="row small-up-2 medium-up-2 large-up-2">
+
+                    <div class="columns">
+                      <p><strong>Certificate in Full Stack Web Development</strong><br>
+                        Berkeley Coding Boot Camp<br>
+                        University of California, Berkeley</p>
+                    </div>
+
+                    <div class="columns">
+                      <p><strong>Bachelor of Arts</strong><br>
+                        English, with Honors<br>
+                        University of California, Berkeley</p>
+                    </div>
+                  </div>
                 </div>
 
                 <div class="tabs-panel" id="resume">
@@ -194,7 +226,8 @@
                           <a href="">
                             <h3 class="article-title">Changing The Game for Girls in STEM</h3>
                           </a>
-                          <p class="article-desc">Working on this white paper, for which I managed the design git and publication and contributed sections of text, nurtured my interest in coding.</p>
+                          <p class="article-desc">Working on this white paper, for which I managed the design git and
+                            publication and contributed sections of text, nurtured my interest in coding.</p>
                         </div>
                         <div class="card-divider flex-container align-middle">
                           <img class="avatar" src="https://techbridgegirls.org/TBG_EEEG_logo.png" alt="avatar">
@@ -215,7 +248,8 @@
                           <a href="">
                             <h3 class="article-title">Coding and the Pursuit of Flow</h3>
                           </a>
-                          <p class="article-desc">A meditation on the state of "flow," and the right balance of challenge and aptitude that creates true learning.</p>
+                          <p class="article-desc">A meditation on the state of "flow," and the right balance of
+                            challenge and aptitude that creates true learning.</p>
                         </div>
                         <div class="card-divider flex-container align-middle">
                           <img class="avatar" src="images/jen-head-shot.png" alt="avatar">
@@ -234,9 +268,11 @@
                         <div class="card-section">
                           <p class="meta-data article-subtext">BLOG POST | 10 MIN READ</p>
                           <a href="">
-                            <h3 class="article-title">Coding Boot Camp: My Journey <small>The Good, The Bad and the Ugly</small></h3>
+                            <h3 class="article-title">Coding Boot Camp: My Journey <small>The Good, The Bad and the
+                                Ugly</small></h3>
                           </a>
-                          <p class="article-desc">A blog post written a few weeks into coding boot camp, capturing my experience through the lens of 80's movies.</p>
+                          <p class="article-desc">A blog post written a few weeks into coding boot camp, capturing my
+                            experience through the lens of 80's movies.</p>
                         </div>
                         <div class="card-divider flex-container align-middle">
                           <img class="avatar" src="images/jen-head-shot.png" alt="avatar">
@@ -246,19 +282,46 @@
                         </div>
                       </div>
                     </div>
-                      
+
                   </div>
                 </div>
 
                 <div class="tabs-panel" id="service">
                   <h3>Community Service</h3>
-                  <ul>
-                    <li>VICE CHAIR San Jose Middle School Site Council <small>elected position</small></li>
-                    <li>VOLUNTEER Schafer’s ATA Tournament Team <small>American Taekwondo Association</small></li>
-                    <li>ADVISOR & GRANT-WRITER Jaspie’s Journey <small>bringing martial arts to kids with autism</small></li>
-                    <li>FORMER DIRECTOR Camp Invention Marin <small>a STEM camp from the National Inventors Hall of Fame</small></li>
-                    <li>FORMER BIG SISTER Big Brothers Big Sisters </li>
-                  </ul>
+
+                  <div class="row small-up-2 medium-up-2 large-up-3">
+
+                    <div class="columns">
+                      <p><strong>VICE CHAIR</strong><br>
+                        San Jose Middle School Site Council<br>
+                        <small>elected position</small></p>
+                    </div>
+
+                    <div class="columns">
+                      <p><strong>VOLUNTEER</strong><br>
+                        Schafer’s ATA Tournament Team<br>
+                        <small>American Taekwondo Association</small></p>
+                    </div>
+
+                    <div class="columns">
+                      <p><strong>ADVISOR & GRANT-WRITER</strong><br>
+                        Jaspie’s Journey<br>
+                        <small>bringing martial arts to kids with autism</small></p>
+                    </div>
+
+                    <div class="columns">
+                      <p><strong>DIRECTOR (former)</strong><br>
+                        Camp Invention Marin<br>
+                        <small>a kids STEM camp from the National Inventors Hall of
+                          Fame</small></p>
+                    </div>
+
+                    <div class="columns">
+                      <p><strong>BIG SISTER (former)</strong><br>
+                        Big Brothers Big Sisters</p>
+                    </div>
+
+                  </div>
                 </div>
 
 
@@ -290,12 +353,16 @@
 
                       <div class="flip-card-inner-back">
                         <h3 class="flip-card-inner-back-title">Lisa's Pampered Paws</h3>
-                        <p class="flip-card-inner-back-text">This website was built for an active pet grooming business in Reno, Nevada.  It was one of the first projects I coded from scratch professionally for a living business (not just for a Boot Camp project).</p>
-                          <div class="row">
-                            <a href="https://github.com/JenJayme/lisas-pampered-paws" class="button float-left" target="_blank">Repo</a>
-                            <a href="https://lisaspamperedpaws.com/" class="button button-secondary float-right innerCardBtn" target="_blank">Deployed</a>
-                          </div>                      
+                        <p class="flip-card-inner-back-text">This website was built for an active pet grooming business
+                          in Reno, Nevada. It was one of the first projects I coded from scratch professionally for a
+                          living business (not just for a Boot Camp project).</p>
+                        <div class="row">
+                          <a href="https://github.com/JenJayme/lisas-pampered-paws" class="button float-left"
+                            target="_blank">Repo</a>
+                          <a href="https://lisaspamperedpaws.com/"
+                            class="button button-secondary float-right innerCardBtn" target="_blank">Deployed</a>
                         </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -308,14 +375,17 @@
                       </div>
                       <div class="flip-card-inner-back">
                         <h3 class="flip-card-inner-back-title">The Physics of Tricking</h3>
-                        <p class="flip-card-inner-back-text">This site explores the connection between physics and "tricking", a modern athletic pursuit derived from martial arts and dance.  It was built to showcase the research my son Cole Jayme did for a school project.</p>
+                        <p class="flip-card-inner-back-text">This site explores the connection between physics and
+                          "tricking", a modern athletic pursuit derived from martial arts and dance. It was built to
+                          showcase the research my son Cole Jayme did for a school project.</p>
 
-                          <div class="row">
-                            <a href="https://github.com/JenJayme/tricking" class="button float-left">Repo</a>
-                            <a href="https://jenjayme.github.io/tricking/" class="button button-secondary float-right">Deployed</a>
-                          </div>   
-
+                        <div class="row">
+                          <a href="https://github.com/JenJayme/tricking" class="button float-left">Repo</a>
+                          <a href="https://jenjayme.github.io/tricking/"
+                            class="button button-secondary float-right">Deployed</a>
                         </div>
+
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -328,13 +398,17 @@
                       </div>
                       <div class="flip-card-inner-back">
                         <h3 class="flip-card-inner-back-title">Bragging Rights</h3>
-                        <p class="flip-card-inner-back-text">A unique React-powered platform that offers gaming enthusiasts an arena to coordinate multi-game tournaments among a circle of friends, with aggregated reporting on performance statistics in a dynamically updated dashboard.  Version 1 centers on the popular "Call of Duty" universe.</p>
+                        <p class="flip-card-inner-back-text">A unique React-powered platform that offers gaming
+                          enthusiasts an arena to coordinate multi-game tournaments among a circle of friends, with
+                          aggregated reporting on performance statistics in a dynamically updated dashboard. Version 1
+                          centers on the popular "Call of Duty" universe.</p>
 
-                          <div class="row">
-                            <a href="https://github.com/BraggingRightsTeam/StatsDash" class="button float-left">Repo</a>
-                            <a href="https://limitless-ocean-05272.herokuapp.com/" class="button button-secondary float-right">Deployed</a>
-                          </div>   
-                                                </div>
+                        <div class="row">
+                          <a href="https://github.com/BraggingRightsTeam/StatsDash" class="button float-left">Repo</a>
+                          <a href="https://limitless-ocean-05272.herokuapp.com/"
+                            class="button button-secondary float-right">Deployed</a>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -347,14 +421,18 @@
                       </div>
                       <div class="flip-card-inner-back">
                         <h3 class="flip-card-inner-back-title">Clickamajiggy</h3>
-                        <p class="flip-card-inner-back-text">A React-based interactive memory game highlighting some of the world's most renowned artwork.  Built for a Boot Camp assignment that required use of React. Click on any image but don't click more than once.  Keeps track of your current score and top score.</p>
+                        <p class="flip-card-inner-back-text">A React-based interactive memory game highlighting some of
+                          the world's most renowned artwork. Built for a Boot Camp assignment that required use of
+                          React. Click on any image but don't click more than once. Keeps track of your current score
+                          and top score.</p>
 
-                          <div class="row">
-                            <a href="https://github.com/JenJayme/clickamajiggy" class="button float-left">Repo</a>
-                            <a href="https://jenjayme.github.io/clickamajiggy/" class="button button-secondary float-right">Deployed</a>
-                          </div>   
-                                                
+                        <div class="row">
+                          <a href="https://github.com/JenJayme/clickamajiggy" class="button float-left">Repo</a>
+                          <a href="https://jenjayme.github.io/clickamajiggy/"
+                            class="button button-secondary float-right">Deployed</a>
                         </div>
+
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -367,14 +445,18 @@
                       </div>
                       <div class="flip-card-inner-back">
                         <h3 class="flip-card-inner-back-title">Employee Directory</h3>
-                        <p class="flip-card-inner-back-text">A React-based interactive table of employee info featuring the cast of  hit comedy <strong>Parks and Recreation</strong>.  Sort on any column and filter by birthday month.  Built for a Boot Camp assignment which required use of React and stateful components to filter and sort on at least one field.</p>
+                        <p class="flip-card-inner-back-text">A React-based interactive table of employee info featuring
+                          the cast of hit comedy <strong>Parks and Recreation</strong>. Sort on any column and filter by
+                          birthday month. Built for a Boot Camp assignment which required use of React and stateful
+                          components to filter and sort on at least one field.</p>
 
-                          <div class="row">
-                            <a href="https://github.com/JenJayme/new-employee-dir" class="button float-left">Repo</a>
-                            <a href="https://jenjayme.github.io/new-employee-dir/" class="button button-secondary float-right">Deployed</a>
-                          </div>   
-                                                
+                        <div class="row">
+                          <a href="https://github.com/JenJayme/new-employee-dir" class="button float-left">Repo</a>
+                          <a href="https://jenjayme.github.io/new-employee-dir/"
+                            class="button button-secondary float-right">Deployed</a>
                         </div>
+
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -387,14 +469,17 @@
                       </div>
                       <div class="flip-card-inner-back">
                         <h3 class="flip-card-inner-back-title">Spartan Race<br>Training Tracker</h3>
-                        <p class="flip-card-inner-back-text">This React-based app provides a platform to conveniently track fitness training for a Spartan Race, with data visualizations on total exercise time and weight lifted.  Uses MongoDB and Mongoose (NoSQL) for the back-end database.</p>
+                        <p class="flip-card-inner-back-text">This React-based app provides a platform to conveniently
+                          track fitness training for a Spartan Race, with data visualizations on total exercise time and
+                          weight lifted. Uses MongoDB and Mongoose (NoSQL) for the back-end database.</p>
 
-                          <div class="row">
-                            <a href="https://github.com/JenJayme/spartan-tracker" class="button float-left">Repo</a>
-                            <a href="https://spartan-tracker.herokuapp.com/" class="button button-secondary float-right">Deployed</a>
-                          </div>
-
+                        <div class="row">
+                          <a href="https://github.com/JenJayme/spartan-tracker" class="button float-left">Repo</a>
+                          <a href="https://spartan-tracker.herokuapp.com/"
+                            class="button button-secondary float-right">Deployed</a>
                         </div>
+
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -407,12 +492,17 @@
                       </div>
                       <div class="flip-card-inner-back">
                         <h3 class="flip-card-inner-back-title">Virtuous Circle</h3>
-                        <p class="flip-card-inner-back-text">A bulletin board to promote sharing of surplus fresh, local food.  Restaurants, caterers and farmers often need a timely way to offload perfectly good unused food, and local shelters and food pantries are full of those who need it. Inspired by the work of ExtraFood.org, this app connects them. Built for an assignment requiring functionality to write, save, and delete notes via an Express backend and JSON data. </p>
+                        <p class="flip-card-inner-back-text">A bulletin board to promote sharing of surplus fresh, local
+                          food. Restaurants, caterers and farmers often need a timely way to offload perfectly good
+                          unused food, and local shelters and food pantries are full of those who need it. Inspired by
+                          the work of ExtraFood.org, this app connects them. Built for an assignment requiring
+                          functionality to write, save, and delete notes via an Express backend and JSON data. </p>
 
-                          <div class="row">
-                            <a href="https://github.com/JenJayme/virtuous-circle" class="button float-left">Repo</a>
-                            <a href="https://virtuous-circle.herokuapp.com/" class="button button-secondary float-right">Deployed</a>
-                          </div>   
+                        <div class="row">
+                          <a href="https://github.com/JenJayme/virtuous-circle" class="button float-left">Repo</a>
+                          <a href="https://virtuous-circle.herokuapp.com/"
+                            class="button button-secondary float-right">Deployed</a>
+                        </div>
 
                       </div>
                     </div>
@@ -427,12 +517,16 @@
                       </div>
                       <div class="flip-card-inner-back">
                         <h3 class="flip-card-inner-back-title">Game of Thrones<br>Fan Trivia</h3>
-                        <p class="flip-card-inner-back-text">An interactive trivia game centered on the hit HBO show, built for a Boot Camp assignment which required manipulating the DOM with Javascript and jQuery.  This version is a modest cleanup of my original project.  It was the very first Javascript assignment, created early in the course.</p>
+                        <p class="flip-card-inner-back-text">An interactive trivia game centered on the hit HBO show,
+                          built for a Boot Camp assignment which required manipulating the DOM with Javascript and
+                          jQuery. This version is a modest cleanup of my original project. It was the very first
+                          Javascript assignment, created early in the course.</p>
 
-                          <div class="row">
-                            <a href="https://github.com/JenJayme/new-GOT-quiz" class="button float-left">Repo</a>
-                            <a href="https://jenjayme.github.io/new-GOT-quiz/" class="button button-secondary float-right">Deployed</a>
-                          </div>   
+                        <div class="row">
+                          <a href="https://github.com/JenJayme/new-GOT-quiz" class="button float-left">Repo</a>
+                          <a href="https://jenjayme.github.io/new-GOT-quiz/"
+                            class="button button-secondary float-right">Deployed</a>
+                        </div>
 
                       </div>
                     </div>
@@ -447,11 +541,15 @@
                       </div>
                       <div class="flip-card-inner-back">
                         <h3 class="flip-card-inner-back-title">Middle Ground</h3>
-                        <p class="flip-card-inner-back-text">In today's America, constructive debate about social issues has broken down. We don’t just disagree on policies anymore. We disagree about what’s true, and what news can be trusted. Middle|Ground aims to shine a light on the bias of news we receive through social media.</p>
+                        <p class="flip-card-inner-back-text">In today's America, constructive debate about social issues
+                          has broken down. We don’t just disagree on policies anymore. We disagree about what’s true,
+                          and what news can be trusted. Middle|Ground aims to shine a light on the bias of news we
+                          receive through social media.</p>
 
                         <div class="row">
                           <a href="https://github.com/JenJayme/MiddleGround" class="button float-left">Repo</a>
-                          <a href="https://rocky-meadow-78317.herokuapp.com/" class="button button-secondary float-right">Deployed</a>
+                          <a href="https://rocky-meadow-78317.herokuapp.com/"
+                            class="button button-secondary float-right">Deployed</a>
                         </div>
 
                       </div>
@@ -467,14 +565,18 @@
                       </div>
                       <div class="flip-card-inner-back">
                         <h3 class="flip-card-inner-back-title">Project Miles</h3>
-                        <p class="flip-card-inner-back-text">An app to promote healthy choices for teens by gamifying their daily choices and featuring an Avengers superhero theme. Built for the first team project in Boot Camp, for an assignment requiring use of an API and one or more external libraries. </p>
+                        <p class="flip-card-inner-back-text">An app to promote healthy choices for teens by gamifying
+                          their daily choices and featuring an Avengers superhero theme. Built for the first team
+                          project in Boot Camp, for an assignment requiring use of an API and one or more external
+                          libraries. </p>
 
-                          <div class="row">
-                            <a href="https://github.com/JenJayme/Project_Miles" class="button float-left">Repo</a>
-                            <a href="https://jenjayme.github.io/Project_Miles/" class="button button-secondary float-right">Deployed</a>
-                          </div>   
-
+                        <div class="row">
+                          <a href="https://github.com/JenJayme/Project_Miles" class="button float-left">Repo</a>
+                          <a href="https://jenjayme.github.io/Project_Miles/"
+                            class="button button-secondary float-right">Deployed</a>
                         </div>
+
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -492,12 +594,13 @@
                           accusantium, repellendus ex debitis molestias, recusandae dignissimos delectus.</p>
 
 
-                          <div class="row">
-                            <a href="https://github.com/JenJayme/lisas-pampered-paws" class="button float-left">Repo</a>
-                            <a href="https://lisaspamperedpaws.com/" class="button button-secondary float-right">Deployed</a>
-                          </div>   
-
+                        <div class="row">
+                          <a href="https://github.com/JenJayme/lisas-pampered-paws" class="button float-left">Repo</a>
+                          <a href="https://lisaspamperedpaws.com/"
+                            class="button button-secondary float-right">Deployed</a>
                         </div>
+
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -514,10 +617,11 @@
                           Nemo doloremque
                           accusantium, repellendus ex debitis molestias, recusandae dignissimos delectus.</p>
 
-                          <div class="row">
-                            <a href="https://github.com/JenJayme/lisas-pampered-paws" class="button float-left">Repo</a>
-                            <a href="https://lisaspamperedpaws.com/" class="button button-secondary float-right">Deployed</a>
-                          </div>   
+                        <div class="row">
+                          <a href="https://github.com/JenJayme/lisas-pampered-paws" class="button float-left">Repo</a>
+                          <a href="https://lisaspamperedpaws.com/"
+                            class="button button-secondary float-right">Deployed</a>
+                        </div>
 
                       </div>
                     </div>
@@ -541,30 +645,36 @@
               <div class="row">
                 <div class="medium-6 columns">
                   <h3>Contact Me</h3>
-                  <p>I’m interested in opportunities to exercise and deepen my coding skills, whether consulting gigs, pro bono work or employment opportunities.  Please don't hesitate to reach out.</p>
-                    <div class="social-footer-icons">
-                      <ul class="menu simple white-text">
-                        <li><a href="https://www.facebook.com/jeniferjayme/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="https://www.instagram.com/jenjayme/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/jenjayme">
+                  <p>I’m interested in opportunities to exercise and deepen my coding skills, whether consulting gigs,
+                    pro bono work or employment opportunities. Please don't hesitate to reach out.</p>
+                  <div class="social-footer-icons">
+                    <ul class="menu simple white-text">
+                      <li><a href="https://www.facebook.com/jeniferjayme/"><i class="fa fa-facebook"
+                            aria-hidden="true"></i></a></li>
+                      <li><a href="https://www.instagram.com/jenjayme/"><i class="fa fa-instagram"
+                            aria-hidden="true"></i></a></li>
+                      <li><a href="https://www.linkedin.com/in/jenjayme">
                           <i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="https://twitter.com/jen_jayme/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                      </ul>
-                    </div>
+                      <li><a href="https://twitter.com/jen_jayme/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="medium-6 columns">
-                  <label>Name
-                    <input type="text" placeholder="Name">
-                  </label>
-                  <label>Email
-                    <input type="text" placeholder="Email">
-                  </label>
-                  <label>
-                    Message
-                    <textarea placeholder="Message"></textarea>
-                  </label>
-                  <input type="submit" class="button expanded" value="Submit">
-                </div>
+                <form id='contactForm'>
+                  <div class="medium-6 columns">
+                    <label>Name
+                      <input type="text" placeholder="Name" name="name">
+                    </label>
+                    <label>Email
+                      <input type="text" placeholder="Email" name="email">
+                    </label>
+                    <label>
+                      Message
+                      <textarea placeholder="Message" name="message"></textarea>
+                    </label>
+                    <input type="submit" class="button expanded" value="Submit">
+                  </div>
+                </form>
               </div>
 
             </div>

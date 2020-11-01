@@ -32,8 +32,12 @@
   color: white;
 }
 
-.backgroundDark h1, p {
+.backgroundDark p {
   color: white;
+}
+
+.backgroundDark h1 {
+  color: rgba(255, 255, 255, .6);
 }
 
 .backgroundLight {
@@ -118,7 +122,11 @@ body {
   background-image: url('../images/lights-multicolor-static-background.png');
 }
 
-.smallscreenHeader h1, p {
+.smallscreenHeader h1 {
+  color: rgba(255, 255, 255, .6);
+}
+
+.smallscreenHeader p {
   color: white;
 }
 
