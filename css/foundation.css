@@ -2932,6 +2932,7 @@ select {
 
 .accordion {
   margin-left: 0;
+  background: inherit;
   list-style-type: none; }
 
   .accordion[disabled] .accordion-title {
@@ -3382,6 +3383,10 @@ select {
   padding: 1rem; }
   .card-section > :last-child {
     margin-bottom: 0; }
+
+.card-section p {
+  color: #0a0a0a;
+}
 
 .card-image {
   min-height: 1px; }
@@ -5237,7 +5242,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   border: .5px groove rgba(230, 230, 230, .5);
   border-top: 0;
   /* background: #fefefe; */
-  background-image: radial-gradient(ellipse farthest-corner at center, rgba(240, 234, 214, 1) 25%, rgba(255, 255, 242, 1) 75%, rgba(255, 255, 255, 1) 100%);
+  /* background-image: radial-gradient(ellipse farthest-corner at center, rgba(240, 234, 214, 1) 25%, rgba(255, 255, 242, 1) 75%, rgba(255, 255, 255, 1) 100%); */
   padding: 1rem;
   color: rgb(58, 22, 56);
   /* color: #0a0a0a; */
@@ -5245,7 +5250,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   transition: all 0.5s ease; }
 
 .tabs-content.vertical {
-  border: 1px solid #e6e6e6;
+  border: .5px groove rgba(230, 230, 230, .5);
   border-left: 0; }
 
 .tabs-panel {
