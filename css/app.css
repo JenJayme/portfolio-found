@@ -75,6 +75,7 @@ body {
   background-color: rgb(124, 23, 28);
   margin-left: 10px;
   margin-right: 10px;
+  z-index: 4;
 }
 
 .button:hover {
@@ -163,25 +164,25 @@ body {
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
     position: relative;
-    -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
+    /* -webkit-backface-visibility: hidden; */
+            /* backface-visibility: hidden; */
   }
   
   .flip-card-inner-front,
   .flip-card-inner-back {
-    -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-    position: absolute;
+    /* -webkit-backface-visibility: hidden; */
+            /* backface-visibility: hidden; */
+    position: fixed;
     top: 0;
     left: 0;
   }
   
   .flip-card-inner-front {
-    /* background: url(../images/paws.png) 0 0 no-repeat; */
     z-index: 2;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-transform: translateZ(1px);
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
@@ -259,12 +260,14 @@ body {
     background-position: -70px;
   }
   
+  /* title strip on front of flip card, not using */
   .flip-card-inner-front span {
+    display: none;
     width: 100%;
-    text-align: center;
+    text-align: center; */
     /* background: rgba(254, 254, 254, 0.3); */
     /* background: rgb(126, 13, 101); */
-    color: transparent;
+    color: transparent; 
     padding: .25rem 0;
     margin-top: 50%;
     font-size: 1.25rem;
@@ -272,8 +275,9 @@ body {
   }
   
   .flip-card-inner-back {
-    -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg) translateZ(1px);
+    /* -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg); */
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
