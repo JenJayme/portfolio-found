@@ -1,6 +1,7 @@
 $(document).foundation();
 var button = $('.button');
 var contactForm = $('#contactForm');
+var homeButton = $('#home-button');
 
 function testAlert () {
     alert("Button click registered")
@@ -19,7 +20,27 @@ $('.flip-card').on('mouseover', function (event) {
     console.log("Hovering on", thisLink)
 })
 
+function scrollToTop () {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+function openCurtain () {
+    $('body').addClass('curtain-menu-open');
+}
+
+function closeCurtain () {
+    $('body').removeClass('curtain-menu-open');
+}
+    
 $(document).ready(function () {
+
+    openCurtain();
+
+    homeButton.click(function(){
+        scrollToTop();
+        $('body').addClass('curtain-menu-open');
+    })
 
     contactForm.on('submit', function (event) {
         event.preventDefault();

@@ -27,7 +27,7 @@
   <div class="off-canvas-wrapper">
     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 
-      <div class="off-canvas position-left reveal-for-medium" id="my-info" data-off-canvas data-position="left">
+      <div class="off-canvas position-left reveal-for-medium" data-off-canvas data-position="left">
 
         <video autoplay muted loop id="myVideo">
           <source src="./images/lights-multicolor.mp4" type="video/mp4">
@@ -43,47 +43,85 @@
             marketing
             and communications. </p>
           <!-- <p>I’m looking for opportunities to exercise and deepen my coding skills.</p> -->
+
+          <!-- the trigger -->
+            <div id="home-button" class="curtain-menu-button" data-curtain-menu-button>
+              <div class="curtain-menu-button-toggle">
+                <i class="fas fa-home" aria-hidden="true"></i>
+                <!-- <div class="bar1"></div>
+                <div class="bar2"></div> -->
+              </div>
+            </div>
         </div>
       </div>
+
+  <!-- CURTAIN OPENING MENU -->
+  <div id="home">
+
+    <!-- the menu  -->
+    <div class="curtain-menu">
+      <div class="curtain"></div>
+      <div class="curtain"></div>
+      <div class="curtain"></div>
+      <div class="curtain-menu-wrapper">
+        <ul class="curtain-menu-list menu vertical">
+          <li><a href="#" onclick="openCurtain()">Home</a></li>
+          <li><a href="#aboutMeBar" onclick="closeCurtain()">About</a></li>
+          <li><a href="#codeProjectsBar" onclick="closeCurtain()">Work</a></li>
+          <li><a href="#contactMeBar" onclick="closeCurtain()">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
 
       <!-- MAIN PAGE HEADER -->
 
       <div class="off-canvas-content" data-off-canvas-content>
         <div class="title-bar hide-for-medium">
-          <div class="title-bar-left">
-            <button class="menu-icon" type="button" data-open="my-info"></button>
+          <div class="title-bar">
+            <button class="menu-icon" type="button" data-open="mobileMenu"></button>
             <span class="title-bar-title">Jen Jayme</span>
           </div>
         </div>
 
+        <div id="mobileMenu" class="hide-for-medium">
+
+        </div>
+
         <div class="hide-for-medium smallscreenHeader">
+
+          <video autoplay muted loop id="myVideo">
+            <source src="./images/lights-multicolor.mp4" type="video/mp4">
+          </video>
+
           <div class="darkScreen">
             <div class="row column">
               <br>
               <img class="thumbnail rounded" src="images/jen-head-shot.png">
-              <h1>Jen Jayme</h1>
+              <!-- <h1>Jen Jayme</h1> -->
               <p>Full stack web developer with front-end design talents, and a background in cause-based fundraising,
-                marketing and
-                communications.</p>
+                marketing and communications.</p>
               <p><small>Click headings below to expand and collapse sections.</small></p>
             </div>
           </div>
         </div>
 
         <!-- ACCORDION -->
-        <ul class="accordion" data-accordion data-multi-expand="true" data-allow-all-closed="true">
+        <ul class="accordion" data-accordion data-multi-expand="true" data-allow-all-closed="true">    
 
           <!-- ACCORDION SECTION 1: ABOUT ME -->
-          <li class="accordion-item" data-accordion-item id="aboutMeBar">
+          <li class="accordion-item is-active" data-accordion-item id="aboutMeBar">
             <!-- Accordion tab title -->
-            <a href="#" class="accordion-title">About Me <small>(bio | tech skills | education | community service |
-                resume)</small></a>
+            <a href="#aboutMeBar" class="accordion-title">About Me <small> bio  |  tech skills  |  education  |  community service  | 
+                resume</small></a>
 
             <!-- Accordion tab content. -->
             <div class="accordion-content backgroundDark" data-tab-content>
 
               <!-- Responsive Tabs: Bio Skills Resume -->
-              <ul class="tabs backgroundDark" data-responsive-accordion-tabs="tabs medium-accordion large-tabs" id="about-tabs">
+              <ul class="tabs" data-responsive-accordion-tabs="tabs medium-accordion large-tabs" id="about-tabs">
                 <li class="tabs-title is-active"><a href="#bio" aria-selected="true">Bio</a></li>
                 <li class="tabs-title"><a href="#skills" aria-selected="true">Skills</a></li>
                 <li class="tabs-title"><a href="#education" aria-selected="true">Education</a></li>

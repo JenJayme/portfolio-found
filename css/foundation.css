@@ -2953,7 +2953,11 @@ select {
   font-size: 1rem;
   line-height: 1;
   /* color: #1779ba;  */
-  color: rgba(255, 255, 255, .9); 
+  color: rgba(255, 255, 255, .8); 
+}
+
+.accordion-title small {
+  color: rgba(255, 255, 255, .5); 
 }
 
   :last-child:not(.is-active) > .accordion-title {
@@ -5241,6 +5245,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
 .tabs-content {
   border: .5px groove rgba(230, 230, 230, .5);
   border-top: 0;
+  background: inherit;
   /* background: #fefefe; */
   /* background-image: radial-gradient(ellipse farthest-corner at center, rgba(240, 234, 214, 1) 25%, rgba(255, 255, 242, 1) 75%, rgba(255, 255, 255, 1) 100%); */
   padding: 1rem;
@@ -5251,6 +5256,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
 
 .tabs-content.vertical {
   border: .5px groove rgba(230, 230, 230, .5);
+  background: inherit;
   border-left: 0; }
 
 .tabs-panel {
@@ -5288,6 +5294,7 @@ a.thumbnail {
             box-shadow: none; }
 
 .title-bar {
+  height: 3rem;
   padding: 0.5rem;
   background: #0a0a0a;
   color: #fefefe;
@@ -5320,7 +5327,10 @@ a.thumbnail {
 .title-bar-title {
   display: inline-block;
   vertical-align: middle;
-  font-weight: bold; }
+  font-weight: bold;
+  font-size: 1.4rem;
+  padding: 4px;
+ }
 
 .has-tip {
   position: relative;
