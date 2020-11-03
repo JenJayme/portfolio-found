@@ -111,13 +111,24 @@ body {
   display: none;
 }
 
-.home {
+#home {
   top: 0;
   height: 100vh;
-  position: fixed;
+  width: 100vh;
+  position: absolute;
 }
 
-#myVideo {
+.main {
+  border-left: ivory;
+  border-style: ridge;
+  position: relative;
+  display: block;
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.myVideo {
   display: block;
   height: 100%;
 }
@@ -407,7 +418,7 @@ body {
   
 .curtain-menu {
   z-index: 2;
-  position: relative;
+  position: absolute;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -503,7 +514,7 @@ body {
 
 .curtain-menu .curtain:nth-child(odd) {
   /* background: #0c3e5f; */
-  background-image: linear-gradient(rgb(7, 7, 173), 20%, black); 
+  background-image: linear-gradient(rgba(7, 7, 173, .85), 15%, rgba(0, 0, 0, .85)); 
   background-repeat: no-repeat;
   /* bookmark */
 }
@@ -601,4 +612,42 @@ body {
     .headerBar {
       width: 100%;
     }
+
+    .curtain-menu {
+      top: 12%;
+      height: 60vh;
+      width: 100vw;
+    }
+
+    .curtain-menu ul {
+      top: -140px;
+      line-height: .5rem;
+      z-index: 12;
+    }
+
+    .curtain-menu-wrapper .curtain-menu-list li {
+      width: 100%;
+      font-size: 1.25rem;
+      text-align: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      transition: all 0.2s ease-in;
+    }
+
+    .curtain-menu-button {
+      position: inherit;
+      right: 80%;
+   }   
+
+    .curtain-menu-button i {
+      position: inherit;
+      transform: translate(50%, 50%);
+   }   
+
+    #home {
+      height: 50%;
+      display: block;
+    }
+
   }

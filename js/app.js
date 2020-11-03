@@ -1,7 +1,7 @@
 $(document).foundation();
 var button = $('.button');
 var contactForm = $('#contactForm');
-var homeButton = $('#home-button');
+var homeButton = $('.home-button');
 
 function testAlert () {
     alert("Button click registered")

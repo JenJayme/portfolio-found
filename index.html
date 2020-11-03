@@ -26,735 +26,769 @@
   <div>
 
 
-  <!-- SLIDE OUT PROFILE SIDEBAR -->
-  <div class="off-canvas-wrapper">
+    <!-- SLIDE OUT PROFILE SIDEBAR -->
+    <div class="off-canvas-wrapper">
 
-    <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 
-      <div class="off-canvas position-left reveal-for-medium" data-off-canvas data-position="left">
+        <div class="off-canvas position-left reveal-for-medium" data-off-canvas data-position="left">
 
-        <video autoplay muted loop id="myVideo">
-          <source src="./images/lights-multicolor.mp4" type="video/mp4">
-        </video>
+          <!-- SIDEBAR VIDEO -->
+          <video autoplay muted loop class="myVideo hide-for-small">
+            <source src="./images/lights-multicolor.mp4" type="video/mp4">
+          </video>
 
-        <div class="row column content">
-          <br>
-          <img class="thumbnail rounded" src="images/jen-head-shot.png">
-          <h2>Jen Jayme</h2>
-          <p>Principal Consultant<br>
-            Jayme Development Services</p>
-          <p>Full stack web developer with front-end design talents and a background in cause-based fundraising,
-            marketing
-            and communications. </p>
-          <!-- <p>I’m looking for opportunities to exercise and deepen my coding skills.</p> -->
+          <div class="row column content">
+            <br>
+            <img class="thumbnail rounded" src="images/jen-head-shot.png">
+            <h2>Jen Jayme</h2>
+            <p>Principal Consultant<br>
+              Jayme Development Services</p>
+            <p>Full stack web developer with front-end design talents and a background in fundraising,
+              marketing and communications. </p>
+            <!-- <p>I’m looking for opportunities to exercise and deepen my coding skills.</p> -->
 
-          <!-- the trigger -->
-            <div id="home-button" class="curtain-menu-button" data-curtain-menu-button>
+            <!-- HOME BUTTON & CURTAIN TRIGGER -->
+            <div id="home-button" class="curtain-menu-button home-button" data-curtain-menu-button>
               <div class="curtain-menu-button-toggle">
                 <i class="fas fa-home" aria-hidden="true"></i>
                 <!-- <div class="bar1"></div>
                 <div class="bar2"></div> -->
               </div>
             </div>
-        </div>
-      </div>
-
-  <!-- CURTAIN OPENING MENU -->
-  <div id="home">
-
-    <!-- the menu  -->
-    <div class="curtain-menu">
-      <div class="curtain"></div>
-      <div class="curtain"></div>
-      <div class="curtain"></div>
-      <div class="curtain-menu-wrapper">
-        <ul class="curtain-menu-list menu vertical">
-          <li><a href="#" onclick="openCurtain()">Home</a></li>
-          <li><a href="#aboutMeBar" onclick="closeCurtain()">About</a></li>
-          <li><a href="#codeProjectsBar" onclick="closeCurtain()">Work</a></li>
-          <li><a href="#contactMeBar" onclick="closeCurtain()">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-
-  </div>
-
-
-      <!-- MAIN PAGE HEADER -->
-
-      <div class="off-canvas-content" data-off-canvas-content>
-        <div class="title-bar hide-for-medium">
-          <div class="title-bar">
-            <button class="menu-icon" type="button" data-open="mobileMenu"></button>
-            <span class="title-bar-title">Jen Jayme</span>
+            
           </div>
         </div>
 
-        <div id="mobileMenu" class="hide-for-medium">
-
-        </div>
-
-        <div class="hide-for-medium smallscreenHeader">
-
-          <video autoplay muted loop id="myVideo">
-            <source src="./images/lights-multicolor.mp4" type="video/mp4">
-          </video>
-
-          <div class="darkScreen">
-            <div class="row column">
-              <br>
-              <img class="thumbnail rounded" src="images/jen-head-shot.png">
-              <!-- <h1>Jen Jayme</h1> -->
-              <p>Full stack web developer with front-end design talents, and a background in cause-based fundraising,
-                marketing and communications.</p>
-              <p><small>Click headings below to expand and collapse sections.</small></p>
-            </div>
-          </div>
-        </div>
-
-        <!-- ACCORDION -->
-        <ul class="accordion" data-accordion data-multi-expand="true" data-allow-all-closed="true">    
-
-          <!-- ACCORDION SECTION 1: ABOUT ME -->
-          <li class="accordion-item is-active" data-accordion-item id="aboutMeBar">
-            <!-- Accordion tab title -->
-            <a href="#aboutMeBar" class="accordion-title">About Me <small> bio  |  tech skills  |  education  |  community service  | 
-                resume</small></a>
-
-            <!-- Accordion tab content. -->
-            <div class="accordion-content backgroundDark" data-tab-content>
-
-              <!-- Responsive Tabs: Bio Skills Resume -->
-              <ul class="tabs" data-responsive-accordion-tabs="tabs medium-accordion large-tabs" id="about-tabs">
-                <li class="tabs-title is-active"><a href="#bio" aria-selected="true">Bio</a></li>
-                <li class="tabs-title"><a href="#skills" aria-selected="true">Skills</a></li>
-                <li class="tabs-title"><a href="#education" aria-selected="true">Education</a></li>
-                <li class="tabs-title"><a href="#service" aria-selected="true">Community Service</a></li>
-                <li class="tabs-title"><a href="#blog" aria-selected="true">Blog</a></li>
-                <li class="tabs-title"><a href="#resume" aria-selected="true">Resume</a></li>
+        <!-- CURTAIN OPENING MENU -->
+        <div id="home">
+  
+          <!-- the menu  -->
+          <div class="curtain-menu">
+            <div class="curtain"></div>
+            <div class="curtain"></div>
+            <div class="curtain"></div>
+            <div class="curtain-menu-wrapper">
+              <ul class="curtain-menu-list menu vertical">
+                <li><a href="#" onclick="openCurtain()">Home</a></li>
+                <li><a href="#aboutMeBar" onclick="closeCurtain()">About</a></li>
+                <li><a href="#codeProjectsBar" onclick="closeCurtain()">Work</a></li>
+                <li><a href="#contactMeBar" onclick="closeCurtain()">Contact</a></li>
               </ul>
-
-              <div class="tabs-content backgroundDark" data-tabs-content="about-tabs">
-
-                <div class="tabs-panel is-active" id="bio">
-                  <h3>Bio</h3>
-
-                  <p class="lead">I'm enjoying a second career in full-stack web development after some years in
-                    fundraising, marketing and communications for great causes.</p>
-                  <p> I’m most proficient in HTML, CSS, Javascript and React, but continuously learning and comfortable
-                    with many technologies including server-side and database architectures such as MySql, MongoDB and
-                    Node/Express servers.
-                  </p>
-                  <p> I've served in leadership roles at several prominent organizations including Big Brothers Big
-                    Sisters,
-                    Community Action Marin, Hispanic Scholarship Fund, St. Vincent de Paul Society, and Santa Clara
-                    University,
-                    and consulted with many others. I've managed numerous major projects from start to finish,
-                    launched new websites and brand strategies, implemented various new technologies, started new
-                    programs, led
-                    teams to meet ambitious fundraising goals, and inspired millions of dollars in donations.</p>
-                  <p> Along the way, I got to learn from some amazing people who practiced transformative methods
-                    including Growth Mindset,
-                    Lean Management, Kaizen, User-Centered Design and Agile Development. These principles have
-                    cultivated my exceptional leadership,
-                    project management, communication and interpersonal skills.</p>
-                  <p> I've frequently served as the resident website administrator, database builder, early adopter of
-                    new technologies
-                    and all-around tech whiz in thinly staffed nonprofits. In 2020, when the pandemic shook up life as
-                    we know it, I
-                    embraced the moment to deepen my technical skills at UC Berkeley’s Coding Boot Camp.
-                  <p><strong>I’m actively exploring chances to exercise and deepen my coding skills, whether in
-                      consulting gigs, pro bono work, or employment opportunities.</strong></p>
-                </div>
-
-                <div class="tabs-panel" id="skills">
-                  <h3>Skills</h3>
-                  <div class="row small-up-1 medium-up-2 large-up-4">
-                    <ul>
-                      <div class="column">
-                        <li class="lead"><strong>Languages</strong></li>
-                        <ul>
-                          <li>HTML</li>
-                          <li>CSS</li>
-                          <li>Javascript (ES5 & ES6)</li>
-                          <li>SQL</li>
-                        </ul>
-                      </div>
-                      <div class="column">
-                        <li class="lead"><strong>Methods</strong></li>
-                        <ul>
-                          <li>Ajax</li>
-                          <li>Agile Software Development</li>
-                          <li>Git Workflow</li>
-                          <li>Handlebars</li>
-                          <li>Kanban</li>
-                          <li>Object Oriented Programming</li>
-                          <li>MERN Stack</li>
-                          <li>Model-View-Controller</li>
-                          <li>REST APIs</li>
-                        </ul>
-                      </div>
-
-                      <div class="column">
-                        <li class="lead"><strong>Applications</strong></li>
-                        <ul>
-                          <li>Adobe Illustrator</li>
-                          <li>Adobe InDesign</li>
-                          <li>Adobe Photoshop</li>
-                          <li>Blackbaud RE/NXT</li>
-                          <li>Express.js</li>
-                          <li>Git Hub</li>
-                          <li>MongoDB</li>
-                          <li>MySQL</li>
-                          <li>Node.js</li>
-                          <li>React.js</li>
-                          <li>Salesforce</li>
-                          <li>Wordpress</li>
-                        </ul>
-                      </div>
-
-                      <div class="column">
-                        <li class="lead"><strong>Libraries & Frameworks</strong></li>
-                        <ul>
-                          <li>AOS-Animate on Scroll</li>
-                          <li>Bootstrap</li>
-                          <li>Foundation</li>
-                          <li>jQuery</li>
-                          <li>Materialize</li>
-                          <li>Material UI</li>
-                          <li>NPM</li>
-                          <liReact-Boostrap< /li>
-                        </ul>
-                      </div>
-                    </ul>
-                  </div>
-                </div>
-
-                <div class="tabs-panel" id="education">
-                  <h3>Education</h3>
-                  <div class="row small-up-2 medium-up-2 large-up-2">
-
-                    <div class="columns">
-                      <p><strong>Certificate in Full Stack Web Development</strong><br>
-                        Berkeley Coding Boot Camp<br>
-                        University of California, Berkeley</p>
-                    </div>
-
-                    <div class="columns">
-                      <p><strong>Bachelor of Arts</strong><br>
-                        English, with Honors<br>
-                        University of California, Berkeley</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="tabs-panel" id="resume">
-                  <h3>Resume</h3>
-                  <p>Download and print a printable version of my resume here.</p>
-                  <a type="button" class="button" href="./images/resume-designed.pdf">Designed</a>
-                  <a type="button" class="button" href="./images/resume-system.docx">ATS Scanner-Friendly</a>
-                </div>
-
-                <div class="tabs-panel" id="blog">
-                  <div class="row small-up-1 medium-up-2 large-up-2">
-                    <div class="column">
-                      <h3>Blog</h3>
-                    </div>
-
-                    <div class="column">
-                      <p class="text-right"><a target="_blank" href="https://medium.com/@jenshelnuttjayme">follow me on <img src="./images/Medium-Logo-White-RGB@1x.png" style="max-width: 20%" /></a></p>
-                    </div>
-                  </div>
-                  
-                  <div class="row small-up-1 medium-up-1 large-up-3">
-
-                    <div class="column">
-                      <div class="card-article-hover card glow">
-                        <a target="_blank" href="https://www.huffpost.com/entry/change-the-game-for-girls_b_10050100">
-                          <img src="images/girls-design-process.jpg">
-                          <div class="card-section">
-                            <p class="meta-data article-subtext">HUFF POST | 6 MIN READ</p>
-                            <a href="https://www.huffpost.com/entry/change-the-game-for-girls_b_10050100">
-                              <h3 class="article-title">Changing The Game for Girls in STEM</h3>
-                            </a>
-                            <p class="article-desc">I collaborated on this Huffington Post article and the white paper
-                              on
-                              which it's based,
-                              and it nurtured my interest in coding.</p>
-                          </div>
-                          <div class="card-divider flex-container align-middle">
-                            <img class="avatar" src="https://techbridgegirls.org/TBG_EEEG_logo.png" alt="avatar">
-                            <a href="" class="author"></a>
-                          </div>
-                          <div class="hover-border">
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-
-                    <div class="column">
-                      <div class="card-article-hover card glow">
-                        <a target="_blank"
-                          href="https://medium.com/@jenshelnuttjayme/coding-and-the-pursuit-of-flow-f03294f16a9e?sk=1e4f261ca1bf6fe50676f7390e626f08">
-                          <img src="images/Flow Diagram-01.png">
-                          <div class="card-section">
-                            <p class="meta-data article-subtext">BLOG POST | 5 MIN READ</p>
-                            <a
-                              href="https://medium.com/@jenshelnuttjayme/coding-and-the-pursuit-of-flow-f03294f16a9e?sk=1e4f261ca1bf6fe50676f7390e626f08">
-                              <h3 class="article-title">Coding and the Pursuit of Flow</h3>
-                              <p class="article-desc">Some thoughts on the state of "flow," coding, and the right
-                                balance of
-                                challenge and aptitude that creates true learning.</p>
-                          </div>
-                          <div class="card-divider flex-container align-middle">
-                            <img class="avatar" src="images/jen-head-shot.png" alt="avatar">
-                            <a href="" class="author">Jen Jayme</a>
-                          </div>
-                          <div class="hover-border">
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-
-                    <div class="column">
-                      <div class="card-article-hover card glow">
-                        <a
-                          href="https://medium.com/@jenshelnuttjayme/coding-boot-camp-the-good-the-bad-and-the-ugly-fa48bbf7d7ee?sk=4d12887f78bf79473063612a1eb68ca9">
-                          <img src="images/Private Benjamin.jpg">
-                          <div class="card-section">
-                            <p class="meta-data article-subtext">BLOG POST | 10 MIN READ</p>
-                            <a target="_blank"
-                              href="https://medium.com/@jenshelnuttjayme/coding-boot-camp-the-good-the-bad-and-the-ugly-fa48bbf7d7ee?sk=4d12887f78bf79473063612a1eb68ca9">
-                              <h3 class="article-title">Coding Boot Camp: The Good, The Bad and the Ugly</h3>
-                            </a>
-                            <p class="article-desc">A blog post written a few weeks into coding boot camp, capturing my
-                              experience through the lens of 80's movies.</p>
-                          </div>
-                          <div class="card-divider flex-container align-middle">
-                            <img class="avatar" src="images/jen-head-shot.png" alt="avatar">
-                            <a href="" class="author">Jen Jayme</a>
-                          </div>
-                          <div class="hover-border">
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-
-                <div class="tabs-panel" id="service">
-                  <h3>Community Service</h3>
-
-                  <div class="row small-up-2 medium-up-2 large-up-3">
-
-                    <div class="columns">
-                      <p><strong>VICE CHAIR</strong><br>
-                        San Jose Middle School Site Council<br>
-                        <small>elected position</small></p>
-                        <hr class="blueLine">
-                    </div>
-
-                    <div class="columns">
-                      <p><strong>VOLUNTEER</strong><br>
-                        Schafer’s ATA Tournament Team<br>
-                        <small>American Taekwondo Association</small></p>
-                        <hr class="blueLine">
-                    </div>
-
-                    <div class="columns">
-                      <p><strong>ADVISOR & GRANT-WRITER</strong><br>
-                        Jaspie’s Journey<br>
-                        <small>bringing martial arts to kids with autism</small></p>
-                        <hr class="blueLine">
-                    </div>
-
-                    <div class="columns">
-                      <p><strong>DIRECTOR (former)</strong><br>
-                        Camp Invention Marin<br>
-                        <small>a kids STEM camp from the National Inventors Hall of
-                          Fame</small></p>
-                          <hr class="blueLine">
-                    </div>
-
-                    <div class="columns">
-                      <p><strong>BIG SISTER (former)</strong><br>
-                        Big Brothers Big Sisters</p>
-                        <hr class="blueLine">
-                    </div>
-
-                  </div>
-                </div>
-
-
-              </div>
-
-
-              <!-- ACCORDION SECTION 2: PROJECTS -->
-          <li class="accordion-item is-active" data-accordion-item id="codeProjectsBar">
-
-            <!-- Accordion tab title -->
-            <a href="#" class="accordion-title">Code Projects</a>
-
-            <!-- Accordion tab content. -->
-            <div class="accordion-content backgroundDark" data-tab-content>
-              <div class="row"></div>
-
-              <!-- MAIN PAGE PROJECT GRID -->
-              <div class="row small-up-1 medium-up-2 large-up-3">
-
-                <!-- FLIP CARDS -->
-                <div class="column">
-
-                  <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
-
-                    <div class="flip-card-inner">
-                      <div class="flip-card-inner-front img-paws">
-                        <!-- <span>Lisa's Pampered Paws</span> -->
-                      </div>
-
-                      <div class="flip-card-inner-back">
-                        <h4 class="flip-card-inner-back-title">Lisa's Pampered Paws</h4>
-                        <p class="flip-card-inner-back-text">This website was built for an active pet grooming business
-                          in Reno, Nevada. It was one of the first projects I coded from scratch professionally for a
-                          living business (not just for a Boot Camp project).</p>
-                          
-                        <div class="row">
-
-                          <a 
-                          href="https://github.com/JenJayme/lisas-pampered-paws" 
-                          class="button"  
-                          target="_blank">
-                          Repo
-                          </a>
-
-                          <a href="https://lisaspamperedpaws.com/"
-                            class="button button-secondary" target="_blank">Deployed</a>
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="column">
-                  <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-inner-front img-tricking">
-                        <span>The Physics of Tricking</span>
-                      </div>
-                      <div class="flip-card-inner-back">
-                        <h4 class="flip-card-inner-back-title">The Physics of Tricking</h4>
-                        <p class="flip-card-inner-back-text">This site explores the connection between physics and
-                          "tricking", a modern athletic pursuit derived from martial arts and dance. It was built to
-                          showcase the research my son Cole Jayme did for a school project.</p>
-
-                        <div class="row">
-                          <a target="_blank" href="https://github.com/JenJayme/tricking" class="button float-left">Repo</a>
-
-                          <a href="https://jenjayme.github.io/tricking/"
-                            class="button button-secondary float-right">Deployed</a>
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="column">
-                  <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-inner-front img-bragging">
-                        <span>Bragging Rights</span>
-                      </div>
-                      <div class="flip-card-inner-back">
-                        <h4 class="flip-card-inner-back-title">Bragging Rights</h4>
-                        <p class="flip-card-inner-back-text">A unique React-powered platform that offers gaming
-                          enthusiasts an arena to coordinate multi-game tournaments among a circle of friends, with
-                          aggregated reporting on performance statistics in a dynamically updated dashboard. Version 1
-                          centers on the popular "Call of Duty" universe.</p>
-
-                        <div class="row">
-                          <a target="_blank" href="https://github.com/BraggingRightsTeam/StatsDash" class="button float-left">Repo</a>
-                          <a target="_blank" href="https://limitless-ocean-05272.herokuapp.com/"
-                            class="button button-secondary float-right">Deployed</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="column">
-                  <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-inner-front img-clickamajiggy">
-                        <span>Clickamajiggy</span>
-                      </div>
-                      <div class="flip-card-inner-back">
-                        <h4 class="flip-card-inner-back-title">Clickamajiggy</h4>
-                        <p class="flip-card-inner-back-text">A React-based interactive memory game highlighting some of
-                          the world's most renowned artwork. Built for a Boot Camp assignment that required use of
-                          React. Click on any image but don't click more than once. Keeps track of your current score
-                          and top score.</p>
-
-                        <div class="row">
-                          <a target="_blank" href="https://github.com/JenJayme/clickamajiggy" class="button float-left">Repo</a>
-                          <a target="_blank" href="https://jenjayme.github.io/clickamajiggy/"
-                            class="button button-secondary float-right">Deployed</a>
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="column">
-                  <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-inner-front img-employees">
-                        <span>Employee Directory</span>
-                      </div>
-                      <div class="flip-card-inner-back">
-                        <h4 class="flip-card-inner-back-title">Employee Directory</h4>
-                        <p class="flip-card-inner-back-text">A React-based interactive table of employee info featuring
-                          the cast of hit comedy <strong>Parks and Recreation</strong>. Sort on any column and filter by
-                          birthday month. Built for a Boot Camp assignment which required use of React and stateful
-                          components to filter and sort on at least one field.</p>
-
-                        <div class="row">
-                          <a target="_blank" href="https://github.com/JenJayme/new-employee-dir" class="button float-left">Repo</a>
-                          <a target="_blank" href="https://jenjayme.github.io/new-employee-dir/"
-                            class="button button-secondary float-right">Deployed</a>
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="column">
-                  <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-inner-front img-spartan">
-                        <span>Spartan Race<br>Training Tracker</span>
-                      </div>
-                      <div class="flip-card-inner-back">
-                        <h4 class="flip-card-inner-back-title">Spartan Race<br>Training Tracker</h4>
-                        <p class="flip-card-inner-back-text">This React-based app provides a platform to conveniently
-                          track fitness training for a Spartan Race, with data visualizations on total exercise time and
-                          weight lifted. Uses MongoDB and Mongoose (NoSQL) for the back-end database.</p>
-
-                        <div class="row">
-                          <a target="_blank" href="https://github.com/JenJayme/spartan-tracker" class="button float-left">Repo</a>
-                          <a target="_blank" href="https://spartan-tracker.herokuapp.com/"
-                            class="button button-secondary float-right">Deployed</a>
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="column">
-                  <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-inner-front img-virtuous">
-                        <span>Virtuous Circle</span>
-                      </div>
-                      <div class="flip-card-inner-back">
-                        <h4 class="flip-card-inner-back-title">Virtuous Circle</h4>
-                        <p class="flip-card-inner-back-text">A bulletin board to promote sharing of surplus food. 
-                          Restaurants, caterers and farmers often need a timely way to offload good
-                          unused food, and local shelters need it. Inspired by ExtraFood.org,
-                          this app connects them. Built for a Boot Camp assignment requiring
-                          post/save functionality via an Express backend and JSON data. </p>
-
-                        <div class="row">
-                          <a target="_blank" href="https://github.com/JenJayme/virtuous-circle" class="button float-left">Repo</a>
-                          <a target="_blank" href="https://virtuous-circle.herokuapp.com/"
-                            class="button button-secondary float-right">Deployed</a>
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="column">
-                  <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-inner-front img-got">
-                        <span>Game of Thrones Fan Trivia</span>
-                      </div>
-                      <div class="flip-card-inner-back">
-                        <h4 class="flip-card-inner-back-title">Game of Thrones<br>Fan Trivia</h4>
-                        <p class="flip-card-inner-back-text">An interactive trivia game centered on the hit HBO show,
-                          built for a Boot Camp assignment which required manipulating the DOM with Javascript and
-                          jQuery. This version is a modest cleanup of my original project. It was the very first
-                          Javascript assignment, created early in the course.</p>
-
-                        <div class="row">
-                          <a target="_blank" href="https://github.com/JenJayme/new-GOT-quiz" class="button float-left">Repo</a>
-                          <a target="_blank" href="https://jenjayme.github.io/new-GOT-quiz/"
-                            class="button button-secondary float-right">Deployed</a>
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="column">
-                  <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-inner-front img-middle">
-                        <span>Middle Ground</span>
-                      </div>
-                      <div class="flip-card-inner-back">
-                        <h4 class="flip-card-inner-back-title">Middle Ground</h4>
-                        <p class="flip-card-inner-back-text">In today's America, constructive debate about social issues
-                          has broken down. We don’t just disagree on policies anymore. We disagree about what’s true,
-                          and what news can be trusted. Middle|Ground aims to shine a light on the bias of news we
-                          receive through social media.</p>
-
-                        <div class="row">
-                          <a target="_blank" href="https://github.com/JenJayme/MiddleGround" class="button float-left">Repo</a>
-                          <a target="_blank" href="https://rocky-meadow-78317.herokuapp.com/"
-                            class="button button-secondary float-right">Deployed</a>
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="column">
-                  <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-inner-front img-miles">
-                        <span>Project Miles</span>
-                      </div>
-                      <div class="flip-card-inner-back">
-                        <h4 class="flip-card-inner-back-title">Project Miles</h4>
-                        <p class="flip-card-inner-back-text">An app to promote healthy choices for teens by gamifying
-                          their daily choices and featuring an Avengers superhero theme. Built for the first team
-                          project in Boot Camp, for an assignment requiring use of an API and one or more external
-                          libraries. </p>
-
-                        <div class="row">
-                          <a target="_blank" href="https://github.com/JenJayme/Project_Miles" class="button float-left">Repo</a>
-                          <a target="_blank" href="https://jenjayme.github.io/Project_Miles/"
-                            class="button button-secondary float-right">Deployed</a>
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="column">
-                  <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-inner-front img-weather">
-                        <span>Weather Dashboard</span>
-                      </div>
-                      <div class="flip-card-inner-back">
-                        <h4 class="flip-card-inner-back-title">Weather Dashboard</h4>
-                        <p class="flip-card-inner-back-text">This weather dashboard shares current weather conditions,
-                          UV index and a five-day forecast for any city you search. Created for an early Boot
-                          Camp assignment which introduced API calls using Ajax.</p>
-                        <div class="row">
-                          <a target="_blank" href="https://github.com/JenJayme/weather-dash" class="button float-left">Repo</a>
-                          <a target="_blank" href="https://jenjayme.github.io/weather-dash/"
-                            class="button button-secondary float-right">Deployed</a>
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="column">
-                  <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-inner-front img-booksearch">
-                        <span>React Google Book Search</span>
-                      </div>
-                      <div class="flip-card-inner-back">
-                        <h4 class="flip-card-inner-back-title">React Google Book Search</h4>
-                        <p class="flip-card-inner-back-text">A handy React-based app to keep
-                          track of your reading list, with a Search page powered by Google Books API and a Saved
-                          Books page supported by MongoDB. Created for a Boot Camp team project which required use
-                          of React lifecycle methods to query and display books based on user searches.</p>
-
-                        <div class="row">
-                          <a target="_blank" href="https://github.com/JenJayme/BookSearch" class="button float-left">Repo</a>
-                          <a target="_blank" href="https://dry-coast-13098.herokuapp.com/"
-                            class="button button-secondary float-right">Deployed</a>
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- NEXT DIV ENDS FLIP CARD ROW -->
-              </div>
-              <!-- END PROJECT ACCORDION SECTION -->
-          </li>
-
-          <!-- ACCORDION SECTION 4: CONTACT ME -->
-          <li class="accordion-item is-active" data-accordion-item id="contactMeBar">
-            <!-- Accordion tab title -->
-            <a href="#" class="accordion-title">Contact Details</a>
-
-            <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
-            <div class="accordion-content backgroundDark" data-tab-content>
-
-              <!-- CONTACT ME FOOTER -->
-              <div class="row">
-                <div class="medium-6 columns">
-                  <h3>Contact Me</h3>
-                  <p>I’m interested in opportunities to exercise and deepen my coding skills, whether consulting gigs,
-                    pro bono work or employment opportunities. Please don't hesitate to reach out.</p>
-                  <div class="social-footer-icons">
-                    <ul class="menu simple white-text">
-                      <li><a href="https://www.facebook.com/jeniferjayme/"><i class="fa fa-facebook"
-                            aria-hidden="true"></i></a></li>
-                      <li><a href="https://www.instagram.com/jenjayme/"><i class="fa fa-instagram"
-                            aria-hidden="true"></i></a></li>
-                      <li><a href="https://www.linkedin.com/in/jenjayme">
-                          <i class="fa fa-linkedin"></i></a></li>
-                      <li><a href="https://twitter.com/jen_jayme/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <form id='contactForm'>
-                  <div class="medium-6 columns">
-                    <label>Name
-                      <input type="text" placeholder="Name" name="name">
-                    </label>
-                    <label>Email
-                      <input type="text" placeholder="Email" name="email">
-                    </label>
-                    <label>
-                      Message
-                      <textarea placeholder="Message" name="message"></textarea>
-                    </label>
-                    <input type="submit" class="button expanded" value="Submit">
-                  </div>
-                </form>
-              </div>
-
             </div>
-          </li>
-        </ul>
+          </div>
+
+        </div>
+
+
+        <!-- MAIN PAGE HEADER -->
+
+        <div class="off-canvas-content" data-off-canvas-content>
+          <div class="title-bar hide-for-medium">
+            <div class="title-bar">
+              <button class="menu-icon" type="button" data-open="mobileMenu"></button>
+
+                          <!-- HOME BUTTON & CURTAIN TRIGGER -->
+              <div class="curtain-menu-button home-button float-left" data-curtain-menu-button>
+                <div class="curtain-menu-button-toggle">
+                  <i class="fas fa-home" aria-hidden="true"></i>
+                </div>
+              </div>
+
+              <span class="title-bar-title">Jen Jayme</span>
+            </div>
+          </div>
+
+          <div id="mobileMenu" class="hide-for-medium">
+
+          </div>
+
+          <div class="hide-for-medium smallscreenHeader">
+
+            <video autoplay muted loop class="myVideo">
+              <source src="./images/lights-multicolor.mp4" type="video/mp4">
+            </video>
+
+            <div class="darkScreen">
+              <div class="row column">
+                <br>
+                <img class="thumbnail rounded" src="images/jen-head-shot.png">
+                <!-- <h1>Jen Jayme</h1> -->
+                <p>Full stack web developer with front-end design talents, and a background in cause-based fundraising,
+                  marketing and communications.</p>
+                <p><small>Click headings below to expand and collapse sections.</small></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="main hide">
+            <video autoplay muted loop class="myVideo">
+              <source src="./images/lights-multicolor.mp4" type="video/mp4">
+            </video>
+          </div>
+  
+          <!-- ACCORDION -->
+          <ul class="accordion" data-accordion data-multi-expand="true" data-allow-all-closed="true">
+
+            <!-- ACCORDION SECTION 1: ABOUT ME -->
+            <li class="accordion-item is-active" data-accordion-item id="aboutMeBar">
+              <!-- Accordion tab title -->
+              <a href="#aboutMeBar" class="accordion-title">About Me <small> bio | tech skills | education | community
+                  service |
+                  resume</small></a>
+
+              <!-- Accordion tab content. -->
+              <div class="accordion-content backgroundDark" data-tab-content>
+
+                <!-- Responsive Tabs: Bio Skills Resume -->
+                <ul class="tabs" data-responsive-accordion-tabs="tabs medium-accordion large-tabs" id="about-tabs">
+                  <li class="tabs-title is-active"><a href="#bio" aria-selected="true">Bio</a></li>
+                  <li class="tabs-title"><a href="#skills" aria-selected="true">Skills</a></li>
+                  <li class="tabs-title"><a href="#education" aria-selected="true">Education</a></li>
+                  <li class="tabs-title"><a href="#service" aria-selected="true">Community Service</a></li>
+                  <li class="tabs-title"><a href="#blog" aria-selected="true">Blog</a></li>
+                  <li class="tabs-title"><a href="#resume" aria-selected="true">Resume</a></li>
+                </ul>
+
+                <div class="tabs-content backgroundDark" data-tabs-content="about-tabs">
+
+                  <div class="tabs-panel is-active" id="bio">
+                    <h3>Bio</h3>
+
+                    <p class="lead">I'm enjoying a second career in full-stack web development after some years in
+                      fundraising, marketing and communications for great causes.</p>
+                    <p> I’m most proficient in HTML, CSS, Javascript and React, but continuously learning and
+                      comfortable
+                      with many technologies including server-side and database architectures such as MySql, MongoDB and
+                      Node/Express servers.
+                    </p>
+                    <p> I've served in leadership roles at several prominent organizations including Big Brothers Big
+                      Sisters,
+                      Community Action Marin, Hispanic Scholarship Fund, St. Vincent de Paul Society, and Santa Clara
+                      University,
+                      and consulted with many others. I've managed numerous major projects from start to finish,
+                      launched new websites and brand strategies, implemented various new technologies, started new
+                      programs, led
+                      teams to meet ambitious fundraising goals, and inspired millions of dollars in donations.</p>
+                    <p> Along the way, I got to learn from some amazing people who practiced transformative methods
+                      including Growth Mindset,
+                      Lean Management, Kaizen, User-Centered Design and Agile Development. These principles have
+                      cultivated my exceptional leadership,
+                      project management, communication and interpersonal skills.</p>
+                    <p> I've frequently served as the resident website administrator, database builder, early adopter of
+                      new technologies
+                      and all-around tech whiz in thinly staffed nonprofits. In 2020, when the pandemic shook up life as
+                      we know it, I
+                      embraced the moment to deepen my technical skills at UC Berkeley’s Coding Boot Camp.
+                    <p><strong>I’m actively exploring chances to exercise and deepen my coding skills, whether in
+                        consulting gigs, pro bono work, or employment opportunities.</strong></p>
+                  </div>
+
+                  <div class="tabs-panel" id="skills">
+                    <h3>Skills</h3>
+                    <div class="row small-up-1 medium-up-2 large-up-4">
+                      <ul>
+                        <div class="column">
+                          <li class="lead"><strong>Languages</strong></li>
+                          <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Javascript (ES5 & ES6)</li>
+                            <li>SQL</li>
+                          </ul>
+                        </div>
+                        <div class="column">
+                          <li class="lead"><strong>Methods</strong></li>
+                          <ul>
+                            <li>Ajax</li>
+                            <li>Agile Software Development</li>
+                            <li>Git Workflow</li>
+                            <li>Handlebars</li>
+                            <li>Kanban</li>
+                            <li>Object Oriented Programming</li>
+                            <li>MERN Stack</li>
+                            <li>Model-View-Controller</li>
+                            <li>REST APIs</li>
+                          </ul>
+                        </div>
+
+                        <div class="column">
+                          <li class="lead"><strong>Applications</strong></li>
+                          <ul>
+                            <li>Adobe Illustrator</li>
+                            <li>Adobe InDesign</li>
+                            <li>Adobe Photoshop</li>
+                            <li>Blackbaud RE/NXT</li>
+                            <li>Express.js</li>
+                            <li>Git Hub</li>
+                            <li>MongoDB</li>
+                            <li>MySQL</li>
+                            <li>Node.js</li>
+                            <li>React.js</li>
+                            <li>Salesforce</li>
+                            <li>Wordpress</li>
+                          </ul>
+                        </div>
+
+                        <div class="column">
+                          <li class="lead"><strong>Libraries & Frameworks</strong></li>
+                          <ul>
+                            <li>AOS-Animate on Scroll</li>
+                            <li>Bootstrap</li>
+                            <li>Foundation</li>
+                            <li>jQuery</li>
+                            <li>Materialize</li>
+                            <li>Material UI</li>
+                            <li>NPM</li>
+                            <liReact-Boostrap< /li>
+                          </ul>
+                        </div>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="tabs-panel" id="education">
+                    <h3>Education</h3>
+                    <div class="row small-up-2 medium-up-2 large-up-2">
+
+                      <div class="columns">
+                        <p><strong>Certificate in Full Stack Web Development</strong><br>
+                          Berkeley Coding Boot Camp<br>
+                          University of California, Berkeley</p>
+                      </div>
+
+                      <div class="columns">
+                        <p><strong>Bachelor of Arts</strong><br>
+                          English, with Honors<br>
+                          University of California, Berkeley</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tabs-panel" id="resume">
+                    <h3>Resume</h3>
+                    <p>Download and print a printable version of my resume here.</p>
+                    <a type="button" class="button" href="./images/resume-designed.pdf">Designed</a>
+                    <a type="button" class="button" href="./images/resume-system.docx">ATS Scanner-Friendly</a>
+                  </div>
+
+                  <div class="tabs-panel" id="blog">
+                    <div class="row small-up-1 medium-up-2 large-up-2">
+                      <div class="column">
+                        <h3>Blog</h3>
+                      </div>
+
+                      <div class="column">
+                        <p class="text-right"><a target="_blank" href="https://medium.com/@jenshelnuttjayme">follow me
+                            on <img src="./images/Medium-Logo-White-RGB@1x.png" style="max-width: 20%" /></a></p>
+                      </div>
+                    </div>
+
+                    <div class="row small-up-1 medium-up-1 large-up-3">
+
+                      <div class="column">
+                        <div class="card-article-hover card glow">
+                          <a target="_blank" href="https://www.huffpost.com/entry/change-the-game-for-girls_b_10050100">
+                            <img src="images/girls-design-process.jpg">
+                            <div class="card-section">
+                              <p class="meta-data article-subtext">HUFF POST | 6 MIN READ</p>
+                              <a href="https://www.huffpost.com/entry/change-the-game-for-girls_b_10050100">
+                                <h3 class="article-title">Changing The Game for Girls in STEM</h3>
+                              </a>
+                              <p class="article-desc">I collaborated on this Huffington Post article and the white paper
+                                on
+                                which it's based,
+                                and it nurtured my interest in coding.</p>
+                            </div>
+                            <div class="card-divider flex-container align-middle">
+                              <img class="avatar" src="https://techbridgegirls.org/TBG_EEEG_logo.png" alt="avatar">
+                              <a href="" class="author"></a>
+                            </div>
+                            <div class="hover-border">
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+
+                      <div class="column">
+                        <div class="card-article-hover card glow">
+                          <a target="_blank"
+                            href="https://medium.com/@jenshelnuttjayme/coding-and-the-pursuit-of-flow-f03294f16a9e?sk=1e4f261ca1bf6fe50676f7390e626f08">
+                            <img src="images/Flow Diagram-01.png">
+                            <div class="card-section">
+                              <p class="meta-data article-subtext">BLOG POST | 5 MIN READ</p>
+                              <a
+                                href="https://medium.com/@jenshelnuttjayme/coding-and-the-pursuit-of-flow-f03294f16a9e?sk=1e4f261ca1bf6fe50676f7390e626f08">
+                                <h3 class="article-title">Coding and the Pursuit of Flow</h3>
+                                <p class="article-desc">Some thoughts on the state of "flow," coding, and the right
+                                  balance of
+                                  challenge and aptitude that creates true learning.</p>
+                            </div>
+                            <div class="card-divider flex-container align-middle">
+                              <img class="avatar" src="images/jen-head-shot.png" alt="avatar">
+                              <a href="" class="author">Jen Jayme</a>
+                            </div>
+                            <div class="hover-border">
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+
+                      <div class="column">
+                        <div class="card-article-hover card glow">
+                          <a
+                            href="https://medium.com/@jenshelnuttjayme/coding-boot-camp-the-good-the-bad-and-the-ugly-fa48bbf7d7ee?sk=4d12887f78bf79473063612a1eb68ca9">
+                            <img src="images/Private Benjamin.jpg">
+                            <div class="card-section">
+                              <p class="meta-data article-subtext">BLOG POST | 10 MIN READ</p>
+                              <a target="_blank"
+                                href="https://medium.com/@jenshelnuttjayme/coding-boot-camp-the-good-the-bad-and-the-ugly-fa48bbf7d7ee?sk=4d12887f78bf79473063612a1eb68ca9">
+                                <h3 class="article-title">Coding Boot Camp: The Good, The Bad and the Ugly</h3>
+                              </a>
+                              <p class="article-desc">A blog post written a few weeks into coding boot camp, capturing
+                                my
+                                experience through the lens of 80's movies.</p>
+                            </div>
+                            <div class="card-divider flex-container align-middle">
+                              <img class="avatar" src="images/jen-head-shot.png" alt="avatar">
+                              <a href="" class="author">Jen Jayme</a>
+                            </div>
+                            <div class="hover-border">
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="tabs-panel" id="service">
+                    <h3>Community Service</h3>
+
+                    <div class="row small-up-2 medium-up-2 large-up-3">
+
+                      <div class="columns">
+                        <p><strong>VICE CHAIR</strong><br>
+                          San Jose Middle School Site Council<br>
+                          <small>elected position</small></p>
+                        <hr class="blueLine">
+                      </div>
+
+                      <div class="columns">
+                        <p><strong>VOLUNTEER</strong><br>
+                          Schafer’s ATA Tournament Team<br>
+                          <small>American Taekwondo Association</small></p>
+                        <hr class="blueLine">
+                      </div>
+
+                      <div class="columns">
+                        <p><strong>ADVISOR & GRANT-WRITER</strong><br>
+                          Jaspie’s Journey<br>
+                          <small>bringing martial arts to kids with autism</small></p>
+                        <hr class="blueLine">
+                      </div>
+
+                      <div class="columns">
+                        <p><strong>DIRECTOR (former)</strong><br>
+                          Camp Invention Marin<br>
+                          <small>a kids STEM camp from the National Inventors Hall of
+                            Fame</small></p>
+                        <hr class="blueLine">
+                      </div>
+
+                      <div class="columns">
+                        <p><strong>BIG SISTER (former)</strong><br>
+                          Big Brothers Big Sisters</p>
+                        <hr class="blueLine">
+                      </div>
+
+                    </div>
+                  </div>
+
+
+                </div>
+
+
+                <!-- ACCORDION SECTION 2: PROJECTS -->
+            <li class="accordion-item is-active" data-accordion-item id="codeProjectsBar">
+
+              <!-- Accordion tab title -->
+              <a href="#" class="accordion-title">Code Projects</a>
+
+              <!-- Accordion tab content. -->
+              <div class="accordion-content backgroundDark" data-tab-content>
+                <div class="row"></div>
+
+                <!-- MAIN PAGE PROJECT GRID -->
+                <div class="row small-up-1 medium-up-2 large-up-3">
+
+                  <!-- FLIP CARDS -->
+                  <div class="column">
+
+                    <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
+
+                      <div class="flip-card-inner">
+                        <div class="flip-card-inner-front img-paws">
+                          <!-- <span>Lisa's Pampered Paws</span> -->
+                        </div>
+
+                        <div class="flip-card-inner-back">
+                          <h4 class="flip-card-inner-back-title">Lisa's Pampered Paws</h4>
+                          <p class="flip-card-inner-back-text">This website was built for an active pet grooming
+                            business
+                            in Reno, Nevada. It was one of the first projects I coded from scratch professionally for a
+                            living business (not just for a Boot Camp project).</p>
+
+                          <div class="row">
+
+                            <a href="https://github.com/JenJayme/lisas-pampered-paws" class="button" target="_blank">
+                              Repo
+                            </a>
+
+                            <a href="https://lisaspamperedpaws.com/" class="button button-secondary"
+                              target="_blank">Deployed</a>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="column">
+                    <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-inner-front img-tricking">
+                          <span>The Physics of Tricking</span>
+                        </div>
+                        <div class="flip-card-inner-back">
+                          <h4 class="flip-card-inner-back-title">The Physics of Tricking</h4>
+                          <p class="flip-card-inner-back-text">This site explores the connection between physics and
+                            "tricking", a modern athletic pursuit derived from martial arts and dance. It was built to
+                            showcase the research my son Cole Jayme did for a school project.</p>
+
+                          <div class="row">
+                            <a target="_blank" href="https://github.com/JenJayme/tricking"
+                              class="button float-left">Repo</a>
+
+                            <a href="https://jenjayme.github.io/tricking/"
+                              class="button button-secondary float-right">Deployed</a>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="column">
+                    <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-inner-front img-bragging">
+                          <span>Bragging Rights</span>
+                        </div>
+                        <div class="flip-card-inner-back">
+                          <h4 class="flip-card-inner-back-title">Bragging Rights</h4>
+                          <p class="flip-card-inner-back-text">A unique React-powered platform that offers gaming
+                            enthusiasts an arena to coordinate multi-game tournaments among a circle of friends, with
+                            aggregated reporting on performance statistics in a dynamically updated dashboard. Version 1
+                            centers on the popular "Call of Duty" universe.</p>
+
+                          <div class="row">
+                            <a target="_blank" href="https://github.com/BraggingRightsTeam/StatsDash"
+                              class="button float-left">Repo</a>
+                            <a target="_blank" href="https://limitless-ocean-05272.herokuapp.com/"
+                              class="button button-secondary float-right">Deployed</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="column">
+                    <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-inner-front img-clickamajiggy">
+                          <span>Clickamajiggy</span>
+                        </div>
+                        <div class="flip-card-inner-back">
+                          <h4 class="flip-card-inner-back-title">Clickamajiggy</h4>
+                          <p class="flip-card-inner-back-text">A React-based interactive memory game highlighting some
+                            of
+                            the world's most renowned artwork. Built for a Boot Camp assignment that required use of
+                            React. Click on any image but don't click more than once. Keeps track of your current score
+                            and top score.</p>
+
+                          <div class="row">
+                            <a target="_blank" href="https://github.com/JenJayme/clickamajiggy"
+                              class="button float-left">Repo</a>
+                            <a target="_blank" href="https://jenjayme.github.io/clickamajiggy/"
+                              class="button button-secondary float-right">Deployed</a>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="column">
+                    <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-inner-front img-employees">
+                          <span>Employee Directory</span>
+                        </div>
+                        <div class="flip-card-inner-back">
+                          <h4 class="flip-card-inner-back-title">Employee Directory</h4>
+                          <p class="flip-card-inner-back-text">A React-based interactive table of employee info
+                            featuring
+                            the cast of hit comedy <strong>Parks and Recreation</strong>. Sort on any column and filter
+                            by
+                            birthday month. Built for a Boot Camp assignment which required use of React and stateful
+                            components to filter and sort on at least one field.</p>
+
+                          <div class="row">
+                            <a target="_blank" href="https://github.com/JenJayme/new-employee-dir"
+                              class="button float-left">Repo</a>
+                            <a target="_blank" href="https://jenjayme.github.io/new-employee-dir/"
+                              class="button button-secondary float-right">Deployed</a>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="column">
+                    <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-inner-front img-spartan">
+                          <span>Spartan Race<br>Training Tracker</span>
+                        </div>
+                        <div class="flip-card-inner-back">
+                          <h4 class="flip-card-inner-back-title">Spartan Race<br>Training Tracker</h4>
+                          <p class="flip-card-inner-back-text">This React-based app provides a platform to conveniently
+                            track fitness training for a Spartan Race, with data visualizations on total exercise time
+                            and
+                            weight lifted. Uses MongoDB and Mongoose (NoSQL) for the back-end database.</p>
+
+                          <div class="row">
+                            <a target="_blank" href="https://github.com/JenJayme/spartan-tracker"
+                              class="button float-left">Repo</a>
+                            <a target="_blank" href="https://spartan-tracker.herokuapp.com/"
+                              class="button button-secondary float-right">Deployed</a>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="column">
+                    <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-inner-front img-virtuous">
+                          <span>Virtuous Circle</span>
+                        </div>
+                        <div class="flip-card-inner-back">
+                          <h4 class="flip-card-inner-back-title">Virtuous Circle</h4>
+                          <p class="flip-card-inner-back-text">A bulletin board to promote sharing of surplus food.
+                            Restaurants, caterers and farmers often need a timely way to offload good
+                            unused food, and local shelters need it. Inspired by ExtraFood.org,
+                            this app connects them. Built for a Boot Camp assignment requiring
+                            post/save functionality via an Express backend and JSON data. </p>
+
+                          <div class="row">
+                            <a target="_blank" href="https://github.com/JenJayme/virtuous-circle"
+                              class="button float-left">Repo</a>
+                            <a target="_blank" href="https://virtuous-circle.herokuapp.com/"
+                              class="button button-secondary float-right">Deployed</a>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="column">
+                    <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-inner-front img-got">
+                          <span>Game of Thrones Fan Trivia</span>
+                        </div>
+                        <div class="flip-card-inner-back">
+                          <h4 class="flip-card-inner-back-title">Game of Thrones<br>Fan Trivia</h4>
+                          <p class="flip-card-inner-back-text">An interactive trivia game centered on the hit HBO show,
+                            built for a Boot Camp assignment which required manipulating the DOM with Javascript and
+                            jQuery. This version is a modest cleanup of my original project. It was the very first
+                            Javascript assignment, created early in the course.</p>
+
+                          <div class="row">
+                            <a target="_blank" href="https://github.com/JenJayme/new-GOT-quiz"
+                              class="button float-left">Repo</a>
+                            <a target="_blank" href="https://jenjayme.github.io/new-GOT-quiz/"
+                              class="button button-secondary float-right">Deployed</a>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="column">
+                    <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-inner-front img-middle">
+                          <span>Middle Ground</span>
+                        </div>
+                        <div class="flip-card-inner-back">
+                          <h4 class="flip-card-inner-back-title">Middle Ground</h4>
+                          <p class="flip-card-inner-back-text">In today's America, constructive debate about social
+                            issues
+                            has broken down. We don’t just disagree on policies anymore. We disagree about what’s true,
+                            and what news can be trusted. Middle|Ground aims to shine a light on the bias of news we
+                            receive through social media.</p>
+
+                          <div class="row">
+                            <a target="_blank" href="https://github.com/JenJayme/MiddleGround"
+                              class="button float-left">Repo</a>
+                            <a target="_blank" href="https://rocky-meadow-78317.herokuapp.com/"
+                              class="button button-secondary float-right">Deployed</a>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="column">
+                    <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-inner-front img-miles">
+                          <span>Project Miles</span>
+                        </div>
+                        <div class="flip-card-inner-back">
+                          <h4 class="flip-card-inner-back-title">Project Miles</h4>
+                          <p class="flip-card-inner-back-text">An app to promote healthy choices for teens by gamifying
+                            their daily choices and featuring an Avengers superhero theme. Built for the first team
+                            project in Boot Camp, for an assignment requiring use of an API and one or more external
+                            libraries. </p>
+
+                          <div class="row">
+                            <a target="_blank" href="https://github.com/JenJayme/Project_Miles"
+                              class="button float-left">Repo</a>
+                            <a target="_blank" href="https://jenjayme.github.io/Project_Miles/"
+                              class="button button-secondary float-right">Deployed</a>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="column">
+                    <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-inner-front img-weather">
+                          <span>Weather Dashboard</span>
+                        </div>
+                        <div class="flip-card-inner-back">
+                          <h4 class="flip-card-inner-back-title">Weather Dashboard</h4>
+                          <p class="flip-card-inner-back-text">This weather dashboard shares current weather conditions,
+                            UV index and a five-day forecast for any city you search. Created for an early Boot
+                            Camp assignment which introduced API calls using Ajax.</p>
+                          <div class="row">
+                            <a target="_blank" href="https://github.com/JenJayme/weather-dash"
+                              class="button float-left">Repo</a>
+                            <a target="_blank" href="https://jenjayme.github.io/weather-dash/"
+                              class="button button-secondary float-right">Deployed</a>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="column">
+                    <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-inner-front img-booksearch">
+                          <span>React Google Book Search</span>
+                        </div>
+                        <div class="flip-card-inner-back">
+                          <h4 class="flip-card-inner-back-title">React Google Book Search</h4>
+                          <p class="flip-card-inner-back-text">A handy React-based app to keep
+                            track of your reading list, with a Search page powered by Google Books API and a Saved
+                            Books page supported by MongoDB. Created for a Boot Camp team project which required use
+                            of React lifecycle methods to query and display books based on user searches.</p>
+
+                          <div class="row">
+                            <a target="_blank" href="https://github.com/JenJayme/BookSearch"
+                              class="button float-left">Repo</a>
+                            <a target="_blank" href="https://dry-coast-13098.herokuapp.com/"
+                              class="button button-secondary float-right">Deployed</a>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- NEXT DIV ENDS FLIP CARD ROW -->
+                </div>
+                <!-- END PROJECT ACCORDION SECTION -->
+            </li>
+
+            <!-- ACCORDION SECTION 4: CONTACT ME -->
+            <li class="accordion-item is-active" data-accordion-item id="contactMeBar">
+              <!-- Accordion tab title -->
+              <a href="#" class="accordion-title">Contact Details</a>
+
+              <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+              <div class="accordion-content backgroundDark" data-tab-content>
+
+                <!-- CONTACT ME FOOTER -->
+                <div class="row">
+                  <div class="medium-6 columns">
+                    <h3>Contact Me</h3>
+                    <p>I’m interested in opportunities to exercise and deepen my coding skills, whether consulting gigs,
+                      pro bono work or employment opportunities. Please don't hesitate to reach out.</p>
+                    <div class="social-footer-icons">
+                      <ul class="menu simple white-text">
+                        <li><a href="https://www.facebook.com/jeniferjayme/"><i class="fa fa-facebook"
+                              aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.instagram.com/jenjayme/"><i class="fa fa-instagram"
+                              aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/jenjayme">
+                            <i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://twitter.com/jen_jayme/"><i class="fa fa-twitter"
+                              aria-hidden="true"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <form id='contactForm'>
+                    <div class="medium-6 columns">
+                      <label>Name
+                        <input type="text" placeholder="Name" name="name">
+                      </label>
+                      <label>Email
+                        <input type="text" placeholder="Email" name="email">
+                      </label>
+                      <label>
+                        Message
+                        <textarea placeholder="Message" name="message"></textarea>
+                      </label>
+                      <input type="submit" class="button expanded" value="Submit">
+                    </div>
+                  </form>
+                </div>
+
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
 
-</div>
 
   <script src="js/vendor/jquery.js"></script>
   <script src="js/vendor/what-input.js"></script>

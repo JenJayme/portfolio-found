@@ -4257,9 +4257,10 @@ select {
   .js-off-canvas-overlay.is-overlay-fixed {
     position: fixed; }
 
-.off-canvas-wrapper {
+.off-canvas-wrapper, .off-canvas-wrapper-inner {
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+ }
 
 .off-canvas {
   position: fixed;
@@ -4271,11 +4272,15 @@ select {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   /* background: #e6e6e6; } */
-  background-image: url("../images/lights-multicolor-static-background.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  /* background-image: url("../images/lights-multicolor-static-background.png"); */
+  background: rgba(0, 0, 0, .7);
   color: rgba(255, 255, 255, .8);
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  }
+
+  .off-canvas::-webkit-scrollbar { /* Chrome */
+    display: none; 
   }
 
   [data-whatinput='mouse'] .off-canvas {
