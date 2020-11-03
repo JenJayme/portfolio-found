@@ -112,7 +112,9 @@ body {
 }
 
 .home {
+  top: 0;
   height: 100vh;
+  position: fixed;
 }
 
 #myVideo {
