@@ -115,7 +115,7 @@ body {
   top: 0;
   height: 100vh;
   width: 100vh;
-  position: relative;
+  position: absolute;
   display: block;
 }
 
@@ -127,6 +127,7 @@ body {
   height: 100vh;
   width: 100%;
   object-fit: cover;
+  overflow: hidden;
 }
 
 .myVideo {
@@ -645,7 +646,12 @@ body {
     .curtain-menu-button i {
       position: inherit;
       transform: translate(60%, 50%);
-   }   
+   }
+   
+   .main {
+     visibility: hidden;
+     display: none;
+   }
 
     #home {
       visibility: hidden;
