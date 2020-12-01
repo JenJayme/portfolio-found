@@ -278,21 +278,33 @@ body {
     background-size: cover;
     background-position: -70px;
   }
+
+  .img-sjms {
+    background: url('../images/sjms-screenshot.png') 0 0 no-repeat;
+    background-size: cover;
+    background-position: -110px;
+  }
+
+  .img-jaspie {
+    background: url('../images/jaspie.png') 0 0 no-repeat;
+    background-size: cover;
+    background-position: -10px;
+  }
   
   /* title strip on front of flip card, not using */
   .flip-card-inner-front span {
     display: none;
     width: 100%;
     text-align: center; */
-    /* background: rgba(254, 254, 254, 0.3); */
     /* background: rgb(126, 13, 101); */
     color: transparent; 
     padding: .25rem 0;
     margin-top: 50%;
     font-size: 1.25rem;
     font-weight: bold;
+    z-index: 10;
   }
-  
+
   .flip-card-inner-back {
     -webkit-transform: rotateY(180deg) translateZ(1px);
     /* -webkit-transform: rotateY(180deg);
