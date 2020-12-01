@@ -6,13 +6,13 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jen Jayme Portfolio | Welcome</title>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
   <script type="text/javascript">
     (function () {
       // https://dashboard.emailjs.com/admin/integration
       emailjs.init('user_HwMXwEHp0KORxnvgNKatv');
     })();
-  </script>
+  </script> -->
 
   <!-- CSS  -->
   <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
@@ -24,7 +24,6 @@
 <body>
 
   <div>
-
 
     <!-- SLIDE OUT PROFILE SIDEBAR -->
     <div class="off-canvas-wrapper">
@@ -51,7 +50,7 @@
             <!-- HOME BUTTON & CURTAIN TRIGGER -->
             <div id="home-button" class="curtain-menu-button home-button" data-curtain-menu-button>
               <div class="curtain-menu-button-toggle">
-                <i class="fas fa-home" aria-hidden="true"></i>
+                  <i class="fas fa-home" aria-hidden="true"></i>
                 <!-- <div class="bar1"></div>
                 <div class="bar2"></div> -->
               </div>
@@ -70,10 +69,10 @@
             <div class="curtain"></div>
             <div class="curtain-menu-wrapper">
               <ul class="curtain-menu-list menu vertical">
-                <li><a href="#" onclick="openCurtain()">Home</a></li>
-                <li><a href="#aboutMeBar" onclick="closeCurtain()">About</a></li>
-                <li><a href="#codeProjectsBar" onclick="closeCurtain()">Work</a></li>
-                <li><a href="#contactMeBar" onclick="closeCurtain()">Contact</a></li>
+                <li><a class="glow-on-hover" href="#" onclick="openCurtain()">Home</a></li>
+                <li><a class="glow-on-hover" href="#aboutMeBar" onclick="closeCurtain()">About</a></li>
+                <li><a class="glow-on-hover" href="#codeProjectsBar" onclick="closeCurtain()">Work</a></li>
+                <li><a class="glow-on-hover" href="#contactMeBar" onclick="closeCurtain()">Contact</a></li>
               </ul>
             </div>
           </div>
@@ -810,28 +809,39 @@
               <div class="accordion-content backgroundDark" data-tab-content>
 
                 <!-- CONTACT ME FOOTER -->
-                <div class="row">
-                  <div class="medium-6 columns">
-                    <h3>Contact Me</h3>
+                <div class="row contact">
+                  <div class="small-12 medium-12 columns">
+                    <h3>Hey there. Don't be shy.</h3>
                     <p>I’m interested in opportunities to exercise and deepen my coding skills, whether consulting gigs,
                       pro bono work or employment opportunities. Please don't hesitate to reach out.</p>
-                    <p>phone: <a href=tel:408-455-5643>(408) 455-5643</a></p>
-                    <p>email: <a href="mailto:jen@jaymedev.com">jen@jaymedev.com</a></p>
+                    </div>
+
+                  <div class="small-12 medium-12 large-4 columns">
+                    <p>phone:&nbsp &nbsp <a class="glow-on-hover" href=tel:408-455-5643>(408) 455-5643</a></p>
+                  </div>
+
+                  <div class="small-12 medium-12 large-4 columns">
+                    <p>email:&nbsp &nbsp <a class="glow-on-hover" href="mailto:jen@jaymedev.com">jen@jaymedev.com</a></p>
+                  </div>
+
+                  <div class="small-12 medium-12 large-4 columns">
+
                     <div class="social-footer-icons">
-                      <ul class="menu simple white-text">social:
-                        <li><a href="https://www.facebook.com/jeniferjayme/"><i class="fa fa-facebook"
+                      <ul class="menu simple white-text">social:&nbsp &nbsp 
+                        <li><a class="glow-on-hover" href="https://www.facebook.com/jeniferjayme/"><i class="fa fa-facebook"
                               aria-hidden="true"></i></a></li>
-                        <li><a href="https://www.instagram.com/jenjayme/"><i class="fa fa-instagram"
+                        <li><a class="glow-on-hover" href="https://www.instagram.com/jenjayme/"><i class="fa fa-instagram"
                               aria-hidden="true"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/jenjayme">
+                        <li><a class="glow-on-hover" href="https://www.linkedin.com/in/jenjayme">
                             <i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="https://twitter.com/jen_jayme/"><i class="fa fa-twitter"
+                        <li><a class="glow-on-hover" href="https://twitter.com/jen_jayme/"><i class="fa fa-twitter"
                               aria-hidden="true"></i></a>
                         </li>
                       </ul>
                     </div>
                   </div>
-                  <form id='contactForm'>
+
+                  <!-- <form id='contactForm'>
                     <div class="medium-6 columns">
                       <label>Name
                         <input type="text" placeholder="Name" name="name">
@@ -845,7 +855,7 @@
                       </label>
                       <input type="submit" class="button expanded" value="Submit">
                     </div>
-                  </form>
+                  </form> -->
                 </div>
 
               </div>
