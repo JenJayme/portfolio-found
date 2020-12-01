@@ -89,8 +89,9 @@
 
                           <!-- HOME BUTTON & CURTAIN TRIGGER -->
               <div class="curtain-menu-button home-button float-left" data-curtain-menu-button>
-                <div class="curtain-menu-button-toggle">
+                <div class="curtain-menu-button-toggle"><span data-tooltip tabindex="1" title="Click here to return to Home screen.">
                   <i class="fas fa-home" aria-hidden="true"></i>
+                  </span>
                 </div>
               </div>
 
@@ -410,6 +411,17 @@
 
               <!-- Accordion tab content. -->
               <div class="accordion-content backgroundDark" data-tab-content>
+
+
+              <!-- Closable Callout re Home Button-->
+              <div class="callout" style="background-color: rgba(255, 255, 255, .1" data-closable="slide-out-left">
+                <p><small><em>Tip: To return to the Home screen or navigate to other sections, click the <i class="fas fa-home" aria-hidden="true"></i> at the bottom of the left panel.  
+                  You can close this alert by clicking the X at right.</em></small></p>
+                <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              
                 <div class="row"></div>
 
                 <!-- MAIN PAGE PROJECT GRID -->
@@ -805,8 +817,17 @@
               <!-- Accordion tab title -->
               <a href="#" class="accordion-title">Contact Details</a>
 
-              <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+              <!-- Accordion tab content-->
               <div class="accordion-content backgroundDark" data-tab-content>
+
+                <!-- Closable Callout re Home Button-->
+                <div class="callout" style="background-color: rgba(255, 255, 255, .1" data-closable="slide-out-left">
+                  <p><small><em>Tip: To return to the Home screen or navigate to other sections, click the <i class="fas fa-home" aria-hidden="true"></i> at the bottom of the left panel.  
+                    You can close this alert by clicking the X at right.</em></small></p>
+                  <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
 
                 <!-- CONTACT ME FOOTER -->
                 <div class="row contact">
