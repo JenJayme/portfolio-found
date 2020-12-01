@@ -290,6 +290,12 @@ body {
     background-size: cover;
     background-position: -10px;
   }
+
+  .img-elves {
+    background: url('../images/elves.gif') 0 0 no-repeat;
+    background-size: cover;
+    background-position: -40px;
+  }
   
   /* title strip on front of flip card, not using */
   .flip-card-inner-front span {
