@@ -26,11 +26,13 @@ function scrollToTop () {
 }
 
 function openCurtain () {
+    $('body').removeClass('curtain-menu-close');
     $('body').addClass('curtain-menu-open');
 }
 
 function closeCurtain () {
     $('body').removeClass('curtain-menu-open');
+    $('body').addClass('curtain-menu-close');
 }
     
 $(document).ready(function () {

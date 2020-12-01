@@ -2931,6 +2931,7 @@ select {
     display: block; }
 
 .accordion {
+  position: relative;
   margin-left: 0;
   background: inherit;
   list-style-type: none; }
@@ -5299,7 +5300,9 @@ a.thumbnail {
             box-shadow: none; }
 
 .title-bar {
-  height: 3rem;
+  position: fixed;
+  height: 3.5rem;
+  width: 100%;
   padding: 0.5rem;
   background: #0a0a0a;
   color: #fefefe;
